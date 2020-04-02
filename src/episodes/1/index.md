@@ -1,0 +1,40 @@
+---
+number: 1
+title: 'Npm and GitHub, on closing HTML tags, disappearing User-Agent, Safari vs PWA'
+date: 2020-03-23
+chapters:
+  - time: '00:02:02'
+    title: 'Npm and GitHub'
+  - time: '00:08:39'
+    title: 'On closing HTML tags'
+  - time: '00:19:19'
+    title: 'Disappearing User-Agent'
+  - time: '00:27:36'
+    title: 'Safari vs PWA'
+duration: '00:00:00'
+size: 0
+tags: episode
+permalink: false
+---
+
+## Npm and GitHub
+
+- [Npm is joining GitHub, Nat Friedman](https://github.blog/2020-03-16-npm-is-joining-github/)
+- [The economics of open source, C J Silverio](https://youtu.be/MO8hZlgK5zc)
+- [The Entropic Package Manager](https://www.entropic.dev/)
+
+## On closing HTML tags
+
+- [Stop using closing tags for the HTML elements, Tab Atkins](https://twitter.com/tabatkins/status/1240027435246051328)
+- [HTML Living Standard: Optional Tags](https://html.spec.whatwg.org/multipage/syntax.html%23optional-tags)
+- [The future of loading CSS, Jake Archibald](https://jakearchibald.com/2016/link-in-body/)
+
+## Disappearing User-Agent
+
+- [My findings after browsing the web without a UA header for one week, Šime Vidas](https://webplatform.news/issues/2020-03-19)
+
+## Safari vs PWA
+
+- [Full Third-Party Cookie Blocking and More, John Wilander](https://webkit.org/blog/10218/full-third-party-cookie-blocking-and-more/)
+- [Apple just killed Offline Web Apps, Aral Balkan](https://ar.al/2020/03/25/apple-just-killed-offline-web-apps-while-purporting-to-protect-your-privacy-why-thats-a-bad-thing-and-why-you-should-care/)
+- [Apple’s attack on service workers, Jeremy Keith](https://adactio.com/journal/16619)

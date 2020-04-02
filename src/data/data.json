@@ -1,0 +1,25 @@
+{
+  "title": "The F-Word",
+  "subtitle": "Frontend podcast by Bruce Lawson and Vadim Makeev.",
+  "description": "Frontend podcast by Bruce Lawson and Vadim Makeev.",
+  "authors": [
+    "Bruce Lawson",
+    "Vadim Makeev"
+  ],
+  "type": "serial",
+  "category": "Technology",
+  "subcategory": "Tech News",
+  "explicit": false,
+  "language": "en",
+  "owner": {
+    "name": "The F-Word",
+    "email": "the@f-word.dev"
+  },
+  "copyright": "CC BY-NC-ND 4.0",
+  "paths": {
+    "cover": "https://f-word.dev/images/cover.png",
+    "feed": "https://f-word.dev/feed/",
+    "audio": "https://f-word.dev/episodes/",
+    "file": "src/episodes/"
+  }
+}

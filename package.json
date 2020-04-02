@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "eleventy --serve --quiet",
+    "11ty": "eleventy",
+    "pack": "gulp build",
+    "build": "npm run 11ty && npm run pack",
+    "deploy": "cd dist && rsync --archive --compress --delete --exclude=.DS_Store . f-word.dev:/var/www/f-word.dev/html/"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "html-minifier": "^4.0.0",
+    "music-metadata": "^6.3.6",
+    "postcss": "^7.0.17",
+    "postcss-csso": "^4.0.0",
+    "postcss-import": "^12.0.1",
+    "pretty-data": "^0.40.0"
+  }
+}
