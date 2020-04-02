@@ -4,23 +4,25 @@ permalink: index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>{{ title }}{% if page.url != '/' %} — The F-Word{% endif %}</title>
+    <title>
+        {{ title }}{% if page.url != '/' %} — {{ data.title }}{% endif %}
+    </title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Frontend podcast by Bruce Lawson and Vadim Makeev.">
+    <meta name="description" content="{{ data.description }}">
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="The F-Word">
-    <meta property="og:site_name" content="Frontend podcast by Bruce Lawson and Vadim Makeev.">
-    <meta property="og:url" content="https://f-word.dev/">
-    <meta property="og:image" content="https://f-word.dev/images/social.png">
+    <meta property="og:title" content="{{ data.title }}">
+    <meta property="og:site_name" content="{{ data.description }}">
+    <meta property="og:url" content="{{ data.paths.site }}">
+    <meta property="og:image" content="{{ data.paths.social }}">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="The F-Word">
-    <meta name="twitter:description" content="Frontend podcast by Bruce Lawson and Vadim Makeev.">
-    <meta name="twitter:site" content="https://f-word.dev/">
-    <meta name="twitter:image" content="https://f-word.dev/images/social.png">
+    <meta name="twitter:title" content="{{ data.title }}">
+    <meta name="twitter:description" content="{{ data.description }}">
+    <meta name="twitter:site" content="{{ data.paths.site }}">
+    <meta name="twitter:image" content="{{ data.paths.social }}">
 
     <link rel="manifest" href=".webmanifest">
     <link rel="icon" type="image/png" sizes="160x160" href="images/icons/160.png">

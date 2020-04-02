@@ -1,7 +1,7 @@
 {
   "title": "The F-Word",
-  "subtitle": "Frontend podcast by Bruce Lawson and Vadim Makeev.",
-  "description": "Frontend podcast by Bruce Lawson and Vadim Makeev.",
+  "subtitle": "Front-end podcast by Bruce Lawson and Vadim Makeev.",
+  "description": "Front-end podcast by Bruce Lawson and Vadim Makeev.",
   "authors": [
     "Bruce Lawson",
     "Vadim Makeev"
@@ -17,9 +17,11 @@
   },
   "copyright": "CC BY-NC-ND 4.0",
   "paths": {
-    "cover": "https://f-word.dev/images/cover.png",
+    "site": "https://f-word.dev/",
     "feed": "https://f-word.dev/feed/",
     "audio": "https://f-word.dev/episodes/",
+    "cover": "https://f-word.dev/images/cover.png",
+    "social": "https://f-word.dev/images/social.png",
     "file": "src/episodes/"
   }
 }
