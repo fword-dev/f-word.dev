@@ -1,7 +1,7 @@
 ---
 number: 1
 title: 'Npm and GitHub, on closing HTML tags, disappearing User-Agent, Safari vs PWA'
-date: 2020-03-23
+date: 2020-04-02
 chapters:
   - time: '00:02:02'
     title: 'Npm and GitHub'
