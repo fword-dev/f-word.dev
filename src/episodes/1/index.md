@@ -11,8 +11,6 @@ chapters:
     title: 'Disappearing User-Agent'
   - time: '00:27:36'
     title: 'Safari vs PWA'
-duration: '00:00:00'
-size: 0
 tags: episode
 permalink: false
 ---
