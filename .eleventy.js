@@ -73,6 +73,8 @@ module.exports = function(config) {
         dir: {
             input: 'src',
             output: 'dist',
+            includes: 'includes',
+            layouts: 'layouts',
             data: 'data'
         },
         dataTemplateEngine: 'njk',
