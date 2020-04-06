@@ -33,7 +33,6 @@ permalink: feed/index.xml
 {%- for episode in collections.episode -%}
 
     {% set description %}
-        {{ content | safe }}
         <ul>
             {%- for chapter in episode.data.chapters -%}
                 <li>{{ chapter.time }} {{ chapter.title }}</li>
@@ -45,7 +44,16 @@ permalink: feed/index.xml
             <li>{{ host }}</li>
             {%- endfor -%}
         </ul>
-        {{ episode.templateContent | safe }}
+        {%- for chapter in episode.data.chapters -%}
+            <h2>{{ chapter.title }}</h2>
+            <ul>
+            {%- for item in chapter.list -%}
+                <li>
+                    <a href="{{ item.link }}">{{ item.title }}</a>
+                </li>
+            {%- endfor -%}
+            </ul>
+        {%- endfor -%}
     {% endset %}
 
     {% set fileUrl %}
