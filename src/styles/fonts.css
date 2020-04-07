@@ -1,11 +1,21 @@
-/* Regular */
+/* Medium */
 
 @font-face {
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 500;
     font-display: swap;
-    src: url('fonts/montserrat-regular.woff2') format('woff2');
+    src: url('../fonts/montserrat-medium.woff2') format('woff2');
+}
+
+/* Medium Italic */
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+    src: url('../fonts/montserrat-medium-italic.woff2') format('woff2');
 }
 
 /* Bold */
@@ -13,17 +23,17 @@
 @font-face {
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-display: swap;
-    src: url('fonts/montserrat-bold.woff2') format('woff2');
+    src: url('../fonts/montserrat-bold.woff2') format('woff2');
 }
 
-/* Italic */
+/* Black */
 
 @font-face {
     font-family: 'Montserrat';
-    font-style: italic;
-    font-weight: normal;
+    font-style: normal;
+    font-weight: 900;
     font-display: swap;
-    src: url('fonts/montserrat-italic.woff2') format('woff2');
+    src: url('../fonts/montserrat-black.woff2') format('woff2');
 }

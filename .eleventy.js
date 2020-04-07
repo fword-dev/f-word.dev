@@ -1,7 +1,8 @@
 module.exports = function(config) {
     config.addPassthroughCopy('src/fonts');
     config.addPassthroughCopy('src/images');
-    config.addPassthroughCopy('src/.webmanifest');
+    config.addPassthroughCopy('src/styles');
+    config.addPassthroughCopy('src/manifest.json');
     config.addPassthroughCopy('src/episodes/**/*.mp3');
 
     config.addFilter('length', function(path) {
@@ -80,7 +81,6 @@ module.exports = function(config) {
         dataTemplateEngine: 'njk',
         markdownTemplateEngine: 'njk',
         htmlTemplateEngine: 'njk',
-        passthroughFileCopy: true,
         templateFormats: [
             'md', 'njk'
         ],

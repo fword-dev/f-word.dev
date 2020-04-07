@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
 <head>
     <title>
         {{ data.title }}{% if page.url != '/' %} — {{ title }}{% endif %}
@@ -21,15 +21,15 @@
     <meta name="twitter:site" content="{{ data.paths.site }}">
     <meta name="twitter:image" content="{{ data.paths.social }}">
 
-    <link rel="manifest" href=".webmanifest">
-    <link rel="icon" type="image/png" sizes="160x160" href="images/icons/160.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/16.png">
-    <link rel="icon" type="image/svg+xml" sizes="any" href="images/icons/any.svg">
-    <link rel="apple-touch-icon" href="images/icons/160.png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" sizes="160x160" href="/images/icons/160.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/16.png">
+    <link rel="icon" type="image/svg+xml" sizes="any" href="/images/icons/any.svg">
+    <link rel="apple-touch-icon" href="/images/icons/160.png">
+    <link rel="stylesheet" href="/styles/index.css">
 </head>
-<body>
+<body class="page__body">
     {{ content | safe }}
 </body>
 </html>

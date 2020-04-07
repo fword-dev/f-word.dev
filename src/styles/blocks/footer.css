@@ -1,0 +1,29 @@
+/* Footer */
+
+.footer__social {
+    margin: 0;
+    padding: 20px;
+    background-color: var(--back);
+    line-height: 1;
+    text-align: center;
+}
+
+.footer__twitter {
+    display: inline-grid;
+    grid-template-columns: min-content max-content;
+    grid-column-gap: 8px;
+    align-items: center;
+    color: var(--blue);
+}
+
+.footer__copy {
+    margin: 0;
+    padding: 20px;
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+}
+
+.footer__license {
+    color: inherit;
+}
