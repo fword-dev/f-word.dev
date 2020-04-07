@@ -1,0 +1,32 @@
+/* Header */
+
+.header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: min-content 1fr;
+    background-color: var(--pink);
+}
+
+/* Title */
+
+.header__title {
+    margin: 0;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 32px;
+}
+
+/* Description */
+
+.header__description {
+    grid-column: 1 / -1;
+    margin: 0;
+    padding: 16px 20px 20px;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 24px;
+}
+
+.header__description-link {
+    color: inherit;
+}

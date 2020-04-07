@@ -1,0 +1,14 @@
+<header class="header">
+    <a href="/">
+        <img class="header__logo" src="/images/icons/any.svg" width="160" height="160" alt="The F-Word">
+    </a>
+    <p class="header__title" aria-hidden="true">
+        The<br>
+        F-Word
+    </p>
+    {% if page.url == '/' %}
+        <p class="header__description">
+            Front-end podcast by <a class="header__description-link" href="https://twitter.com/brucel">Bruce Lawson</a> and <a class="header__description-link" href="https://twitter.com/pepelsbey_">Vadim Makeev</a>
+        </p>
+    {% endif %}
+</header>

@@ -1,0 +1,41 @@
+/* Feature */
+
+.feature {
+    position: relative;
+    display: grid;
+    grid-row-gap: 8px;
+    padding: 20px;
+}
+
+.feature + .feature {
+    border-top: 1px solid var(--grey);
+}
+
+/* Title */
+
+.feature__title {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Link */
+
+.feature__link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.feature__link::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+}
+
+/* Hosts */
+
+.feature__hosts {
+    margin: 0;
+}

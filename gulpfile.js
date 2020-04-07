@@ -4,7 +4,7 @@ const postcss = require('gulp-postcss');
 // Styles
 
 gulp.task('styles', () => {
-    return gulp.src('src/styles/styles.css')
+    return gulp.src('src/styles/index.css')
         .pipe(postcss([
             require('postcss-import'),
             require('postcss-csso')

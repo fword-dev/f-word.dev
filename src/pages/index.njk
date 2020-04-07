@@ -3,6 +3,21 @@ layout: page.njk
 permalink: index.html
 ---
 
-<h1>
-    <img src="images/logo.svg" width="256" height="256" alt="The F-Word">
-</h1>
+{% include 'header.njk' %}
+
+<main>
+    {%- for episode in collections.episode | reverse -%}
+        <article class="feature" id="e{{ episode.data.number }}">
+            <h2 class="feature__title">
+                <a class="feature__link" href="{{ episode.url }}">
+                    {{ episode.data.number }}. {{ episode.data.title }}
+                </a>
+            </h2>
+            <p class="feature__hosts">
+                {{ episode.data.hosts | join(', ') }}
+            </p>
+        </article>
+    {%- endfor -%}
+</main>
+
+{% include 'footer.njk' %}
