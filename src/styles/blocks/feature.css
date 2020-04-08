@@ -3,7 +3,7 @@
 .feature {
     position: relative;
     display: grid;
-    grid-row-gap: 8px;
+    row-gap: 8px;
     padding: 20px;
 }
 

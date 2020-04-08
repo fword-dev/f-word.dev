@@ -1,0 +1,25 @@
+/* Tabs */
+
+.tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Link */
+
+.tabs__link {
+    display: block;
+    padding: 16px 0;
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    text-decoration: none;
+}
+
+.tabs__link--current {
+    background-color: var(--white);
+    color: var(--black);
+}

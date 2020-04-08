@@ -1,0 +1,64 @@
+/* Episode */
+
+.episode {
+    padding: 20px;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/* Title */
+
+.episode__title {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Hosts */
+
+.episode__hosts {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Audio */
+
+.episode__audio {
+    display: block;
+    margin-left: -3px;
+    margin-bottom: 20px;
+    width: calc(100% + 6px);
+    border: 3px solid var(--white);
+    border-radius: 100px;
+}
+
+.episode__audio:focus {
+    outline: none;
+    border-color: var(--blue);
+}
+
+/* Chapters */
+
+.episode__chapters {
+    display: grid;
+    row-gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.episode__chapter {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    column-gap: 8px;
+}
+
+/* Time */
+
+.episode__time {
+    font-weight: bold;
+    font-feature-settings:
+        'tnum' on,
+        'lnum' on;
+}
