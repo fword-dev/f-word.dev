@@ -6,6 +6,7 @@ permalink: index.html
 {% include 'header.njk' %}
 
 <main>
+    <h1 class="visually-hidden">The F-Word</h1>
     {%- for episode in collections.episode | reverse -%}
         <article class="feature" id="e{{ episode.data.number }}">
             <h2 class="feature__title">

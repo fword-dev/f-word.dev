@@ -11,7 +11,7 @@
 .footer__twitter {
     display: inline-grid;
     grid-template-columns: min-content max-content;
-    grid-column-gap: 8px;
+    column-gap: 8px;
     align-items: center;
     color: var(--blue);
 }

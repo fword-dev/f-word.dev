@@ -2,10 +2,16 @@
 
 @import 'fonts.css';
 @import 'variables.css';
+@import 'box-sizing.css';
 
 /* Blocks */
 
+@import 'blocks/visually-hidden.css';
 @import 'blocks/page.css';
 @import 'blocks/header.css';
 @import 'blocks/feature.css';
+@import 'blocks/episode.css';
+@import 'blocks/notes.css';
+@import 'blocks/transcript.css';
+@import 'blocks/tabs.css';
 @import 'blocks/footer.css';

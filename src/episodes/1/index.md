@@ -7,7 +7,7 @@ hosts:
   - Vadim Makeev
 chapters:
   - title: 'Npm and GitHub'
-    time: '00:02:02'
+    time: '02:02'
     list:
       - title: 'Npm is joining GitHub, Nat Friedman'
         link: https://github.blog/2020-03-16-npm-is-joining-github/
@@ -16,7 +16,7 @@ chapters:
       - title: 'The Entropic Package Manager'
         link: https://www.entropic.dev/
   - title: 'On closing HTML tags'
-    time: '00:08:39'
+    time: '08:39'
     list:
       - title: 'Stop using closing tags for the HTML elements, Tab Atkins'
         link: https://twitter.com/tabatkins/status/1240027435246051328
@@ -25,12 +25,12 @@ chapters:
       - title: 'The future of loading CSS, Jake Archibald'
         link: https://jakearchibald.com/2016/link-in-body/
   - title: 'Disappearing User-Agent'
-    time: '00:19:19'
+    time: '19:19'
     list:
       - title: 'My findings after browsing the web without a UA header for one week, Šime Vidas'
         link: https://webplatform.news/issues/2020-03-19
   - title: 'Safari vs PWA'
-    time: '00:27:36'
+    time: '27:36'
     list:
       - title: 'Full Third-Party Cookie Blocking and More, John Wilander'
         link: https://webkit.org/blog/10218/full-third-party-cookie-blocking-and-more/
