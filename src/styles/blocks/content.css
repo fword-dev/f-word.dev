@@ -1,0 +1,68 @@
+/* Content */
+
+.content {
+    padding: 0 20px 16px;
+    hyphens: auto;
+}
+
+.content h3 {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    line-height: 1.1;
+    font-variant: small-caps;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+/* Paragraph */
+
+.content p {
+    line-height: 2;
+}
+
+/* List */
+
+.content ul {
+    display: grid;
+    row-gap: 12px;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 16px;
+    list-style: none;
+}
+
+.content li {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    column-gap: 0.5em;
+}
+
+.content li::before {
+    display: block;
+    margin-top: 0.45em;
+    width: 0.5em;
+    height: 0.5em;
+    background-color: var(--pink);
+    content: '';
+}
+
+/* Rule */
+
+.content hr {
+    margin-top: 0;
+    margin-bottom: -0.4em;
+    border: none;
+    color: inherit;
+    text-align: center;
+    font-weight: 700;
+}
+
+.content hr::before {
+    content: '• • •';
+}
+
+/* Inline */
+
+.content a {
+    color: inherit;
+}
