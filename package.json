@@ -12,6 +12,7 @@
     "gulp": "^4.0.2",
     "gulp-postcss": "^8.0.0",
     "html-minifier": "^4.0.0",
+    "markdown-it-named-headings": "^1.1.0",
     "music-metadata": "^6.3.6",
     "postcss": "^7.0.17",
     "postcss-csso": "^4.0.0",
