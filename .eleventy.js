@@ -1,9 +1,5 @@
 module.exports = function(config) {
-    config.addPassthroughCopy('src/fonts');
-    config.addPassthroughCopy('src/images');
-    config.addPassthroughCopy('src/styles');
-    config.addPassthroughCopy('src/manifest.json');
-    config.addPassthroughCopy('src/episodes/**/*.mp3');
+    // Audio Data Filters
 
     config.addFilter('length', function(path) {
         const fs = require('fs');
@@ -38,6 +34,8 @@ module.exports = function(config) {
         callback(null, duration);
     });
 
+    // HTML Minification
+
     config.addFilter('htmlmin', function(value) {
         let htmlmin = require('html-minifier');
         return htmlmin.minify(
@@ -62,6 +60,8 @@ module.exports = function(config) {
         return content;
     });
 
+    // XML Minification for RSS
+
     config.addTransform('xmlmin', function(content, outputPath) {
         if(outputPath && outputPath.endsWith('.xml')) {
             let prettydata = require('pretty-data');
@@ -69,6 +69,25 @@ module.exports = function(config) {
         }
         return content;
     });
+
+    // Markdown Options
+
+    let markdownIt = require('markdown-it');
+    let markdownItNamedHeadings = require('markdown-it-named-headings');
+
+    config.setLibrary('md', markdownIt({
+        html: true
+    }).use(markdownItNamedHeadings));
+
+    // Passthrough Copy
+
+    config.addPassthroughCopy('src/fonts');
+    config.addPassthroughCopy('src/images');
+    config.addPassthroughCopy('src/styles');
+    config.addPassthroughCopy('src/manifest.json');
+    config.addPassthroughCopy('src/episodes/**/*.mp3');
+
+    // Config
 
     return {
         dir: {

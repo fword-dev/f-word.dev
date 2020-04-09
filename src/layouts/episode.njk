@@ -6,8 +6,12 @@ layout: page.njk
 
 <main>
     <div class="episode">
-        <h1 class="episode__title">{{ number }}. {{ title }}</h1>
-        <p class="episode__hosts">{{ hosts | join(', ') }}</p>
+        <h1 class="episode__title">
+            {{ number }}. {{ title }}
+        </h1>
+        <p class="episode__hosts">
+            {{ hosts | join(', ') }}
+        </p>
         <audio class="episode__audio" src="/episodes/{{ number }}/audio.mp3" controls></audio>
         <ul class="episode__chapters">
             {%- for chapter in chapters -%}
@@ -22,16 +26,16 @@ layout: page.njk
     </div>
     <ul class="tabs">
         <li>
-            <a class="tabs__link tabs__link--current" href="#show-notes">Show Notes</a>
+            <a class="tabs__link" href="#show-notes">Show Notes</a>
         </li>
         <li class="tabs__item">
-            <a class="tabs__link" href="#transcript">Transcript</a>
+            <a class="tabs__link tabs__link--current" href="#transcript">Transcript</a>
         </li>
     </ul>
-    <section class="notes" id="show-notes">
+    <section class="content" id="show-notes" hidden>
         <h2 class="visually-hidden">Show Notes</h2>
         {%- for chapter in chapters -%}
-            <h2>{{ chapter.title }}</h2>
+            <h3>{{ chapter.title }}</h3>
             <ul>
             {%- for item in chapter.list -%}
                 <li>
@@ -41,7 +45,7 @@ layout: page.njk
             </ul>
         {%- endfor -%}
     </section>
-    <section class="transcript" id="transcript" hidden>
+    <section class="content" id="transcript">
         <h2 class="visually-hidden">Transcript</h2>
         {{ content | safe }}
     </section>
