@@ -1,0 +1,13 @@
+/* Copyright */
+
+.copyright {
+    margin: 0;
+    padding: 24px 20px 28px;
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+}
+
+.copyright__link {
+    color: inherit;
+}

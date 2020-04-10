@@ -4,7 +4,7 @@
     position: relative;
     display: grid;
     row-gap: 8px;
-    padding: 20px;
+    padding: 32px 20px 36px;
 }
 
 .feature + .feature {
