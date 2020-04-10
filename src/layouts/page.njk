@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        {{ data.title }}{% if page.url != '/' %} — {{ title }}{% endif %}
+    </title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ data.description }}">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ data.title }}">
+    <meta property="og:site_name" content="{{ data.description }}">
+    <meta property="og:url" content="{{ data.paths.site }}">
+    <meta property="og:image" content="{{ data.paths.social }}">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ data.title }}">
+    <meta name="twitter:description" content="{{ data.description }}">
+    <meta name="twitter:site" content="{{ data.paths.site }}">
+    <meta name="twitter:image" content="{{ data.paths.social }}">
+
+    <link rel="manifest" href=".webmanifest">
+    <link rel="icon" type="image/png" sizes="160x160" href="images/icons/160.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/16.png">
+    <link rel="icon" type="image/svg+xml" sizes="any" href="images/icons/any.svg">
+    <link rel="apple-touch-icon" href="images/icons/160.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    {{ content | safe }}
+</body>
+</html>
