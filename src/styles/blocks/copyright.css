@@ -3,8 +3,8 @@
 .copyright {
     margin: 0;
     padding: 24px 20px 28px;
-    background-color: var(--black);
-    color: var(--white);
+    background-color: var(--basic-black);
+    color: var(--basic-white);
     text-align: center;
 }
 

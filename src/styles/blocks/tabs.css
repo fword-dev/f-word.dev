@@ -11,8 +11,8 @@
     margin: 0;
     padding: 16px 0;
     border: none;
-    background-color: var(--black);
-    color: var(--white);
+    background-color: var(--basic-black);
+    color: var(--basic-white);
     text-align: center;
     font-family: inherit;
     font-size: inherit;
@@ -24,11 +24,11 @@
 }
 
 .tabs__tab[aria-selected='true'] {
-    background-color: var(--white);
-    color: var(--black);
+    background-color: var(--basic-white);
+    color: var(--basic-black);
 }
 
 .tabs__tab:focus {
     outline: none;
-    box-shadow: 0 0 0 2px var(--blue) inset;
+    box-shadow: 0 0 0 2px var(--special-blue) inset;
 }
