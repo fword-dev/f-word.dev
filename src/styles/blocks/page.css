@@ -16,8 +16,8 @@
         min-content;
     max-width: 640px;
     min-height: 100%;
-    background-color: var(--white);
-    color: var(--black);
+    background-color: var(--basic-white);
+    color: var(--basic-black);
     line-height: 1.4;
     font-size: 16px;
     font-weight: 500;

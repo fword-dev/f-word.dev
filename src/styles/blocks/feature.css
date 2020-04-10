@@ -4,11 +4,11 @@
     position: relative;
     display: grid;
     row-gap: 8px;
-    padding: 32px 20px 36px;
+    padding: 32px 20px;
 }
 
 .feature + .feature {
-    border-top: 1px solid var(--grey);
+    border-top: 1px solid var(--basic-dark);
 }
 
 /* Title */

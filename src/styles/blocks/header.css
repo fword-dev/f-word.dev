@@ -4,7 +4,7 @@
     display: grid;
     align-items: center;
     grid-template-columns: min-content 1fr;
-    background-color: var(--pink);
+    background-color: var(--special-pink);
 }
 
 /* Logo */
@@ -17,7 +17,7 @@
 
 .header__title {
     margin: 0;
-    color: var(--white);
+    color: var(--basic-white);
     font-weight: 700;
     font-size: 32px;
 }
@@ -28,8 +28,8 @@
     grid-column: 1 / -1;
     margin: 0;
     padding: 32px 20px 36px;
-    background-color: var(--black);
-    color: var(--white);
+    background-color: var(--basic-black);
+    color: var(--basic-white);
     font-weight: 700;
     font-size: 24px;
 }

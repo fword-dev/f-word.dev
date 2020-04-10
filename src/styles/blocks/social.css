@@ -3,7 +3,7 @@
 .social {
     margin: 0;
     padding: 16px 20px 14px;
-    background-color: var(--back);
+    background-color: var(--basic-light);
     line-height: 1;
     text-align: center;
 }
@@ -13,7 +13,7 @@
     grid-template-columns: min-content max-content;
     column-gap: 8px;
     align-items: center;
-    color: var(--blue);
+    color: var(--special-blue);
 }
 
 .social__icon {
