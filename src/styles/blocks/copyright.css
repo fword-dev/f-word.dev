@@ -2,9 +2,9 @@
 
 .copyright {
     display: grid;
-    grid-template-columns: max-content min-content;
+    grid-template-columns: 1fr min-content;
+    column-gap: 20px;
     justify-content: space-between;
-    align-items: end;
     margin: 0;
     padding: 24px 20px 28px;
     background-color: var(--basic-black);
