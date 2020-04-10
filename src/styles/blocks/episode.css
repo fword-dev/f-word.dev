@@ -33,6 +33,8 @@
 
 .episode__audio:focus {
     outline: none;
+    border-width: 3px;
+    border-style: solid;
     border-color: var(--special-blue);
 }
 
