@@ -3,14 +3,23 @@
   "scripts": {
     "start": "eleventy --serve --quiet",
     "11ty": "eleventy",
+    "code": "editorconfig-checker",
+    "html": "node-w3c-validator -f lint -evH -i dist/**/*.html",
     "pack": "gulp build",
     "build": "npm run 11ty && npm run pack",
     "deploy": "cd dist && rsync --archive --compress --delete --exclude=.DS_Store . f-word.dev:/var/www/f-word.dev/html/"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "del": "^5.1.0",
+    "editorconfig-checker": "^3.0.4",
     "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
     "gulp-postcss": "^8.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-terser": "^1.2.0",
     "html-minifier": "^4.0.0",
     "markdown-it-named-headings": "^1.1.0",
     "music-metadata": "^6.3.6",

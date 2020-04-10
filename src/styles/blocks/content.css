@@ -1,13 +1,18 @@
 /* Content */
 
 .content {
-    padding: 0 20px 16px;
+    padding: 16px 20px 16px;
     hyphens: auto;
 }
 
+.content:focus {
+    outline: none;
+}
+
 .content h3 {
-    margin-top: 32px;
-    margin-bottom: 16px;
+    margin: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
     line-height: 1.1;
     font-variant: small-caps;
     font-weight: 900;
@@ -26,22 +31,18 @@
     display: grid;
     row-gap: 12px;
     padding: 0;
+    padding-left: 16px;
     margin-top: 0;
     margin-bottom: 16px;
     list-style: none;
 }
 
-.content li {
-    display: grid;
-    grid-template-columns: min-content 1fr;
-    column-gap: 0.5em;
-}
-
 .content li::before {
-    display: block;
-    margin-top: 0.45em;
-    width: 0.5em;
-    height: 0.5em;
+    position: absolute;
+    margin-top: 7px;
+    margin-left: -16px;
+    width: 8px;
+    height: 8px;
     background-color: var(--pink);
     content: '';
 }

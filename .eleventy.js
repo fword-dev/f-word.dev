@@ -84,6 +84,7 @@ module.exports = function(config) {
     config.addPassthroughCopy('src/fonts');
     config.addPassthroughCopy('src/images');
     config.addPassthroughCopy('src/styles');
+    config.addPassthroughCopy('src/scripts');
     config.addPassthroughCopy('src/manifest.json');
     config.addPassthroughCopy('src/episodes/**/*.mp3');
 

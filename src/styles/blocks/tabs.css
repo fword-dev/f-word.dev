@@ -3,23 +3,32 @@
 .tabs {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 0;
-    padding: 0;
-    list-style: none;
 }
 
-/* Link */
+/* Tab */
 
-.tabs__link {
-    display: block;
+.tabs__tab {
+    margin: 0;
     padding: 16px 0;
+    border: none;
     background-color: var(--black);
     color: var(--white);
     text-align: center;
-    text-decoration: none;
+    font-family: inherit;
+    font-size: inherit;
 }
 
-.tabs__link--current {
+.tabs__tab::-moz-focus-inner {
+    padding: 0;
+    border: none;
+}
+
+.tabs__tab[aria-selected='true'] {
     background-color: var(--white);
     color: var(--black);
+}
+
+.tabs__tab:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--blue) inset;
 }

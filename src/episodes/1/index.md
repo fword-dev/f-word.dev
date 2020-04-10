@@ -1,6 +1,6 @@
 ---
 number: 1
-title: 'Npm and GitHub, on closing HTML tags, disappearing User-Agent, Safari vs PWA'
+title: 'Npm and GitHub, closing HTML tags, disappearing User-Agent, Safari vs PWA'
 date: 2020-04-02
 hosts:
   - Bruce Lawson
@@ -15,7 +15,7 @@ chapters:
         link: https://youtu.be/MO8hZlgK5zc
       - title: 'The Entropic Package Manager'
         link: https://www.entropic.dev/
-  - title: 'On closing HTML tags'
+  - title: 'Closing HTML tags'
     time: '08:39'
     list:
       - title: 'Stop using closing tags for the HTML elements, Tab Atkins'
@@ -44,7 +44,7 @@ layout: episode.njk
 
 ### Intro
 
-**Vadim:** Hello. [Welcome](Welcome) to the F-Word.
+**Vadim:** Hello. Welcome to the F-Word.
 
 **Bruce:** And the F-Word of course stands for, front-end, the wonderful world of front-end development, web browsers and web standards. I’m Bruce Lawson, coming to you from Birmingham, UK.
 
@@ -88,7 +88,7 @@ layout: episode.njk
 
 ---
 
-### On closing HTML tags
+### Closing HTML tags
 
 **Bruce:** What’s next uncle Vadim?
 
