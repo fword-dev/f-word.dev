@@ -2,7 +2,7 @@
 <html class="page" lang="en">
 <head>
     <title>
-        {{ data.title }}{% if page.url != '/' %} — {{ title }}{% endif %}
+        {% if page.url != '/' %}{{ title }} — {% endif %}{{ data.title }}
     </title>
 
     <meta charset="utf-8">
