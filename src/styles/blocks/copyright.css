@@ -1,11 +1,14 @@
 /* Copyright */
 
 .copyright {
+    display: grid;
+    grid-template-columns: max-content min-content;
+    justify-content: space-between;
+    align-items: end;
     margin: 0;
     padding: 24px 20px 28px;
     background-color: var(--basic-black);
     color: var(--basic-white);
-    text-align: center;
 }
 
 .copyright__link {
