@@ -15,9 +15,7 @@ permalink: feed/index.xml
 
     <itunes:subtitle>{{ data.subtitle }}</itunes:subtitle>
     <itunes:type>{{ data.type }}</itunes:type>
-    <itunes:author>
-        {{ data.authors | join(', ') }}
-    </itunes:author>
+    <itunes:author>{{ data.authors | join(', ') }}</itunes:author>
     <itunes:explicit>{{ data.explicit }}</itunes:explicit>
     <itunes:owner>
         <itunes:name>{{ data.owner.name }}</itunes:name>
@@ -71,11 +69,7 @@ permalink: feed/index.xml
 
         <itunes:episode>{{ episode.data.number }}</itunes:episode>
         <itunes:duration>{{ filePath | trim | duration }}</itunes:duration>
-        <itunes:author>
-            {%- for host in episode.data.hosts -%}
-                {{ host }}{% if not loop.last %}, {% endif %}
-            {%- endfor -%}
-        </itunes:author>
+        <itunes:author>{{ episode.data.hosts | join(', ') }}</itunes:author>
         <itunes:explicit>{{ data.explicit }}</itunes:explicit>
         <itunes:summary>{{ episode.data.title }}.</itunes:summary>
     </item>
