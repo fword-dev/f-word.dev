@@ -31,11 +31,6 @@
     border-radius: 100px;
 }
 
-.episode__audio:focus {
-    outline: none;
-    border-color: var(--special-blue);
-}
-
 /* Chapters */
 
 .episode__chapters {
