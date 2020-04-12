@@ -30,6 +30,15 @@
     margin: 0;
 }
 
+/* Link */
+
+.intro__services-link {
+    color: inherit;
+}
+
+/* Icon */
+
 .intro__services-icon {
     display: block;
+    width: 38px;
 }
