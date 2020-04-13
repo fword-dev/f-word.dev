@@ -69,7 +69,6 @@
 /* Inline */
 
 .content a {
-    display: inline-block;
     color: inherit;
 }
 
@@ -81,7 +80,8 @@
     color: var(--special-pink);
 }
 
-.content a:focus-visible {
+.content a:focus {
+    display: inline-block;
     outline: 3px solid var(--special-blue);
     outline-offset: 2px;
 }
