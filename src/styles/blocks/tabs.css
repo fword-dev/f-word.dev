@@ -28,7 +28,11 @@
     color: var(--basic-black);
 }
 
+.tabs__tab[aria-selected='false']:hover {
+    background-color: var(--basic-extra-dark);
+}
+
 .tabs__tab:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px var(--special-blue) inset;
+    outline: 3px solid var(--special-blue);
+    outline-offset: -3px;
 }

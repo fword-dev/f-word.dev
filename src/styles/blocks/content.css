@@ -9,6 +9,8 @@
     outline: none;
 }
 
+/* Heading */
+
 .content h3 {
     margin: 0;
     padding-top: 16px;
@@ -22,6 +24,8 @@
 /* Paragraph */
 
 .content p {
+    margin-top: 0;
+    margin-bottom: 16px;
     line-height: 2;
 }
 
@@ -51,7 +55,7 @@
 
 .content hr {
     margin-top: 0;
-    margin-bottom: -0.4em;
+    margin-bottom: 8px;
     border: none;
     color: inherit;
     text-align: center;
@@ -65,5 +69,19 @@
 /* Inline */
 
 .content a {
+    display: inline-block;
     color: inherit;
+}
+
+.content a:visited {
+    color: var(--special-violet);
+}
+
+.content a:hover {
+    color: var(--special-pink);
+}
+
+.content a:focus-visible {
+    outline: 3px solid var(--special-blue);
+    outline-offset: 2px;
 }

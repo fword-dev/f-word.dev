@@ -1,9 +1,11 @@
 :root {
     --basic-black: #000000;
+    --basic-extra-dark: #444444;
     --basic-dark: #aaaaaa;
     --basic-light: #eeeeee;
     --basic-white: #ffffff;
 
     --special-pink: #ff69b4;
     --special-blue: #1da1f2;
+    --special-violet: #765aaf;
 }
