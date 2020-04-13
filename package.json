@@ -2,11 +2,9 @@
   "private": true,
   "scripts": {
     "start": "eleventy --serve --quiet",
-    "11ty": "eleventy",
     "code": "editorconfig-checker",
     "html": "node-w3c-validator -f lint -evH -i dist/**/*.html",
-    "pack": "gulp build",
-    "build": "npm run 11ty && npm run pack",
+    "build": "rm -rf dist && eleventy && gulp build",
     "deploy": "cd dist && rsync --archive --compress --delete --exclude=.DS_Store . f-word.dev:/var/www/f-word.dev/html/"
   },
   "devDependencies": {
