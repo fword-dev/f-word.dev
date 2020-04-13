@@ -48,7 +48,8 @@ gulp.task('paths', () => {
 
 gulp.task('cache:hash', () => {
 	return gulp.src([
-			'dist/**/*.{css,js,svg,png,woff2}'
+			'dist/**/*.{css,js,svg,png,woff2}',
+			'dist/manifest.json',
 		], {
 			base: 'dist'
 		})
@@ -60,7 +61,10 @@ gulp.task('cache:hash', () => {
 });
 
 gulp.task('cache:replace', () => {
-	return gulp.src('dist/**/*.{html,css}')
+	return gulp.src([
+            'dist/**/*.{html,css}',
+            'dist/manifest-*.json',
+        ])
 		.pipe(revRewrite({
             manifest:
             gulp.src('dist/rev.json').pipe(paths(del))
