@@ -42,6 +42,10 @@
     color: inherit;
 }
 
+.intro__services-link:hover {
+    transform: scale(1.2);
+}
+
 .intro__services-link:focus {
     outline: 3px solid var(--special-blue);
     outline-offset: 1px;
