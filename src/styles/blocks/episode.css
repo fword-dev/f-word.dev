@@ -19,7 +19,7 @@
 
 .episode__hosts {
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
 }
 
 /* Audio */
@@ -27,7 +27,7 @@
 .episode__audio {
     display: block;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     border-radius: 100px;
 }
 
