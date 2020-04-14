@@ -55,29 +55,29 @@ gulp.task('paths', () => {
 // Cache
 
 gulp.task('cache:hash', () => {
-	return gulp.src([
-			'dist/**/*.{css,js,svg,png,woff2}',
-			'dist/manifest.json',
-		], {
-			base: 'dist'
-		})
-		.pipe(paths(del))
-		.pipe(rev())
-		.pipe(gulp.dest('dist'))
-		.pipe(rev.manifest('rev.json'))
-		.pipe(gulp.dest('dist'));
+    return gulp.src([
+            'dist/**/*.{css,js,svg,png,woff2}',
+            'dist/manifest.json',
+        ], {
+            base: 'dist'
+        })
+        .pipe(paths(del))
+        .pipe(rev())
+        .pipe(gulp.dest('dist'))
+        .pipe(rev.manifest('rev.json'))
+        .pipe(gulp.dest('dist'));
 });
 
 gulp.task('cache:replace', () => {
-	return gulp.src([
+    return gulp.src([
             'dist/**/*.{html,css}',
             'dist/manifest-*.json',
         ])
-		.pipe(revRewrite({
+        .pipe(revRewrite({
             manifest:
             gulp.src('dist/rev.json').pipe(paths(del))
-		}))
-		.pipe(gulp.dest('dist'));
+        }))
+        .pipe(gulp.dest('dist'));
 });
 
 gulp.task('cache', gulp.series(
