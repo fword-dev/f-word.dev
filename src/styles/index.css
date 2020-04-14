@@ -1,9 +1,9 @@
 /* Globals */
 
-@import 'fonts.css';
-@import 'variables.css';
-@import 'box-sizing.css';
-@import 'focus-visible.css';
+@import 'globals/fonts.css';
+@import 'globals/variables.css';
+@import 'globals/box-sizing.css';
+@import 'globals/focus-visible.css';
 
 /* Blocks */
 
