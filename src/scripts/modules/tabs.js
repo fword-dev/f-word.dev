@@ -10,7 +10,6 @@
             this.containers = new Map([...element.querySelectorAll('[data-tab]')].map(entry => [entry.dataset.tab, entry]));
             this.salt = Math.random().toString(36).slice(2);
             this.current = null;
-            this.active = null;
 
             this.init();
         }
@@ -38,8 +37,6 @@
                     container.setAttribute('hidden', true);
                 }
             }
-
-            this.active = keys.indexOf(name);
         }
 
         init() {
