@@ -9,6 +9,7 @@
                 .map(entry => [entry.getAttribute('aria-controls'), entry])
             );
             this.containers = new Map([...document.querySelectorAll('[role="tabpanel"]')]
+                .filter(entry => this.buttons.has(entry.id))
                 .map(entry => [entry.id, entry])
             );
             this.current = null;
