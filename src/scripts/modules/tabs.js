@@ -5,10 +5,12 @@
          */
         constructor(element) {
             this.element = element;
-            this.list = element.querySelector('[data-list]');
-            this.buttons = new Map([...element.querySelectorAll('[data-target]')].map(entry => [entry.dataset.target, entry]));
-            this.containers = new Map([...element.querySelectorAll('[data-tab]')].map(entry => [entry.dataset.tab, entry]));
-            this.salt = Math.random().toString(36).slice(2);
+            this.buttons = new Map([...element.querySelectorAll('[role="tab"]')]
+                .map(entry => [entry.getAttribute('aria-controls'), entry])
+            );
+            this.containers = new Map([...document.querySelectorAll('[role="tabpanel"]')]
+                .map(entry => [entry.id, entry])
+            );
             this.current = null;
 
             this.init();
@@ -18,8 +20,6 @@
          * @param {string} name
          */
         select(name) {
-            const keys = [...this.buttons.keys()];
-
             for (const [key, button] of this.buttons.entries()) {
                 if (key === name) {
                     button.setAttribute('tabindex', '0');
@@ -41,10 +41,11 @@
 
         init() {
             const keys = [...this.buttons.keys()];
+            const active = [...this.buttons.values()].find(button => {
+                return (button.getAttribute('aria-selected') === 'true');
+            });
 
-            this.list.setAttribute('role', 'tablist');
-
-            this.list.addEventListener('keydown', event => {
+            this.element.addEventListener('keydown', event => {
                 if (event.code === 'Home') {
                     event.preventDefault();
 
@@ -71,17 +72,13 @@
             });
 
             for (const [key, button] of this.buttons.entries()) {
-                button.setAttribute('id', `tab_${this.salt}_${key}`);
-                button.setAttribute('role', 'tab');
-                button.setAttribute('aria-controls', `panel_${this.salt}_${key}`);
-
                 button.addEventListener('click', event => {
                     event.preventDefault();
 
                     this.select(key);
                 });
 
-                button.addEventListener('focus', event => {
+                button.addEventListener('focus', () => {
                     this.current = keys.indexOf(key);
                 });
 
@@ -94,13 +91,7 @@
                 });
             }
 
-            for (const [key, container] of this.containers.entries()) {
-                container.setAttribute('id', `panel_${this.salt}_${key}`);
-                container.setAttribute('role', 'tabpanel');
-                container.setAttribute('aria-labelledby', `tab_${this.salt}_${key}`);
-            }
-
-            this.select(keys[0]);
+            this.select(active !== null ? active.getAttribute('aria-controls') : keys[0]);
         }
 
         static create(element) {
@@ -108,7 +99,7 @@
         }
     }
 
-    const containers = document.querySelectorAll('[data-tabs]');
+    const containers = document.querySelectorAll('[role="tablist"]');
 
     for (const container of containers) {
         Tabs.create(container);

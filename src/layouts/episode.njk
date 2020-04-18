@@ -4,7 +4,7 @@ layout: page.njk
 
 {% include 'header.njk' %}
 
-<main data-tabs>
+<main>
     <div class="episode">
         <h1 class="episode__title">
             {{ number }}. {{ title }}
@@ -24,11 +24,23 @@ layout: page.njk
             {%- endfor -%}
         </ul>
     </div>
-    <div class="tabs" aria-label="Show Notes" data-list>
-        <button class="tabs__tab" data-target="notes">Show Notes</button>
-        <button class="tabs__tab" data-target="transcript">Transcript</button>
+    <div class="tabs" role="tablist" aria-label="Show Notes">
+        <button class="tabs__tab" role="tab"
+            aria-selected="true"
+            aria-controls="show-notes-panel"
+            id="show-notes-tab">
+            Show Notes
+        </button>
+        <button class="tabs__tab" role="tab"
+            aria-selected="false"
+            aria-controls="transcript-panel"
+            id="transcript-tab">
+            Transcript
+        </button>
     </div>
-    <section class="content" tabindex="0" data-tab="notes">
+    <section class="content" role="tabpanel" tabindex="0"
+        aria-labelledby="show-notes-tab"
+        id="show-notes-panel">
         <h2 class="visually-hidden">Show Notes</h2>
         {%- for chapter in chapters -%}
             <h3>{{ chapter.title }}</h3>
@@ -41,7 +53,9 @@ layout: page.njk
             </ul>
         {%- endfor -%}
     </section>
-    <section class="content" tabindex="0" data-tab="transcript">
+    <section class="content" role="tabpanel" tabindex="0"
+        aria-labelledby="transcript-tab"
+        id="transcript-panel" hidden>
         <h2 class="visually-hidden">Transcript</h2>
         {{ content | safe }}
     </section>
