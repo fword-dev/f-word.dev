@@ -7,6 +7,11 @@
     "build": "rm -rf dist && eleventy && gulp build",
     "deploy": "cd dist && rsync --archive --compress --delete --exclude=.DS_Store . f-word.dev:/var/www/f-word.dev/html/"
   },
+  "browserslist": [
+    "last 2 version",
+    "not dead",
+    "not ie <= 11"
+  ],
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
     "@babel/core": "^7.9.0",
