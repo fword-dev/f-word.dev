@@ -10,7 +10,8 @@
   "browserslist": [
     "last 2 version",
     "not dead",
-    "not ie <= 11"
+    "not ie <= 11",
+    "iOS >= 12"
   ],
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
