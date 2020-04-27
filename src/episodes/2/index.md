@@ -49,6 +49,8 @@ tags: episode
 layout: episode.njk
 ---
 
+### Intro
+
 **Vadim:** Hello. Welcome to The F-Word.
 
 **Bruce:** The F-Word, of course, stands for front end, and the wonderful world of web development, browsers, web standards, and everything in between.
@@ -72,6 +74,8 @@ layout: episode.njk
 **Bruce:** No. MVC is model view controller, I think. Basically, folks, he’s the geek, and I’m the man who’s making millions from this podcast.
 
 **Vadim:** Okay. Let’s go to the first topic.
+
+## Chrome 81: badging, MIDI, Fugu
 
 **Bruce:** Well, it’s what’s new in Chrome 81? Because Chrome have reestablished their normal release cycle, although I believe they’re going to miss out Chrome 82 and jump straight to 83, something like that. Even given the worldwide quarantine and lockdown, your chums at Google are churning away and making their browser. And there’s lots of interesting things in 81, but the most interesting for me, I think, is the badging API. And you know what that is, Vadders?
 
@@ -102,6 +106,8 @@ layout: episode.njk
 **Vadim:** That was very smooth, Bruce. Like, sliding from Chrome to Firefox, via Chris Mills, and… Oh yeah!
 
 **Bruce:** Thank you.
+
+## Firefox 75: lazy loading, clamp
 
 **Vadim:** Anyway, Chris Mills wrote this piece at Mozilla Hacks blog, mentioning Firefox 75. So, basically, the main thing he discusses is developer tools’ additions they introduced in Firefox 75, and some of the new Web platform features as well.
 
@@ -148,6 +154,8 @@ layout: episode.njk
 **Vadim:** Not only that, I think there was a trend for developers to use viewport units just as they are, like phone size, like `5vw`, and it would break the zooming, it would make text unreadable at narrow viewports. So we should either use calc to combine viewport units with rems or pixels or whatever you prefer, or, in this case, use this clamp function to make minimum and maximum values, and something flexible between them.
 
 **Bruce:** Again, yeah, working for the user.
+
+## The future of HTML forms
 
 **Bruce:** Coming up next is a very interesting collaboration between our chums at Microsoft and our chums at Chrome. I first saw this in a video called “HTML Isn’t Done!” And it’s a collaboration between Greg Whitworth, who worked on the Microsoft Edge team, and Nicole Sullivan, who’s a PM at Google For Chrome. And it’s a video from the Chrome Dev Summit 2019. This is important in and of itself, because it shows that Microsoft is heavily invested in improving Chromium, now that it’s using it for the new Edge browser; they’re not just taking Chrome and skimming it, they are doing a lot of work in Chrome, like we were in Opera, when we initially moved.
 
@@ -207,6 +215,8 @@ layout: episode.njk
 
 **Bruce:** Talking of open, gaps are open, and there are gaps in Safari release notes. Do you see what I did there, Vadim? Another brilliant segue. Thank you. I’m going to have to lie down after this.
 
+## Gaps in Safari release notes
+
 **Bruce:** Tell us about the Safari release notes? Because I don’t read them. Because I don’t use Safari because it smells.
 
 **Vadim:** I feel bad about it, about this topic, because last time, in our first episode, we said a lot of bad things about Safari, and now I’m about to say some other bad things about Safari. So, should I go?
@@ -228,6 +238,8 @@ layout: episode.njk
 **Vadim:** And what was the problem with Safari? That, actually, information in Can I Use… database wasn’t correct. I figured out, with Šime Vidas’ help, that they implemented in 2018 somewhere, in Safari 11 or 12. And “somewhere in between” is the most accurate way to describe it, because I have no idea when they implemented it. I went through all of those release notes they used to publish, I went through all Safari technical previews, looking for `grid-gap` property mentioned there: there is nothing. They silently supported this property without letting developers know. And by looking at Can I Use…, and actually it’s based on MDN database. I was thinking that, yeah, it’s not supported, and what can I do? I’m going to keep using the old version of this property. So I was relieved on one hand, and on the other I was disappointed that they, again, let me down.
 
 **Bruce:** Tim Cook, Vadim is feeling let down. I’m just going to give you a moment, Vadim, because I know you can’t see, listeners, but he’s sobbing gently.
+
+## Webdev glossary, a11y for designers
 
 **Bruce:** Before we end today’s show, we’d like to draw your attention to a couple of cool, community resources. there’s a new book by Jens Meiert. Tell us about that, Vadim, after you’ve blown you nose?
 
