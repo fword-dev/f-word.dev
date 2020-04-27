@@ -57,6 +57,7 @@ gulp.task('paths', () => {
 gulp.task('cache:hash', () => {
     return gulp.src([
             'dist/**/*.{css,js,svg,png,woff2}',
+            '!dist/images/cover.png',
             'dist/manifest.json',
         ], {
             base: 'dist'
