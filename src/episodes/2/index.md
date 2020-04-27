@@ -117,11 +117,11 @@ layout: episode.njk
 
 **Bruce:** Loading lady!
 
-**Vadim:** They finally introduced this loading="lazy" attribute; it’s the way to load your images; not immediately, while the rest of the page is rendering, but once user gets closer to this image. Not only `<img>` element, but also `<iframe>`. But it’s implemented in Chrome only. So in Firefox case, it’s only for images, which covers most of the use cases I believe?
+**Vadim:** They finally introduced this `loading="lazy"` attribute; it’s the way to load your images; not immediately, while the rest of the page is rendering, but once user gets closer to this image. Not only `<img>` element, but also `<iframe>`. But it’s implemented in Chrome only. So in Firefox case, it’s only for images, which covers most of the use cases I believe?
 
 **Bruce:** Yeah. And to be fair, it hasn’t actually been standardized in Chrome yet, so Firefox are waiting until the spec settles before they implement it for `<iframe>`.
 
-**Bruce:** But it’s generally a good thing. Again, it’s a nice, progressive enhancement. If your browser doesn’t understand loading equals lazy, it just ignores it, and the default is eager, so it will load it immediately. And with my English teacher hat on, because I used to be an English teacher, it annoys me because the antonym of lazy, is not eager, the opposite of lazy is diligent! So it should be loading="lazy", and loading="diligent". Honestly.
+**Bruce:** But it’s generally a good thing. Again, it’s a nice, progressive enhancement. If your browser doesn’t understand loading equals lazy, it just ignores it, and the default is eager, so it will load it immediately. And with my English teacher hat on, because I used to be an English teacher, it annoys me because the antonym of lazy, is not eager, the opposite of lazy is diligent! So it should be `loading="lazy"`, and loading="diligent". Honestly.
 
 **Vadim:** Well, it would be easier for me, with lazy and eager, because I’m not a native English speaker. So I’m sorry Bruce.
 
@@ -129,7 +129,7 @@ layout: episode.njk
 
 **Bruce:** So, yeah, that’s why I’m giving up on HTML now!
 
-**Vadim:** Anyway, but this loading="lazy" behavior, if you didn’t know, it’s different from browser to browser. I saw some graphics showing how exactly it’s different. I’m not sure I got the idea but, basically, I wouldn’t expect exactly the same behavior from Chrome and Firefox in this case. And Safari is still behind on this, on this feature, so…
+**Vadim:** Anyway, but this `loading="lazy"` behavior, if you didn’t know, it’s different from browser to browser. I saw some graphics showing how exactly it’s different. I’m not sure I got the idea but, basically, I wouldn’t expect exactly the same behavior from Chrome and Firefox in this case. And Safari is still behind on this, on this feature, so…
 
 **Bruce:** Really? Safari?
 
@@ -139,9 +139,9 @@ layout: episode.njk
 
 **Vadim:** Yeah. Who would have thought?
 
-**Vadim:** So, loading="lazy" is an enhancement. Please use it, and use it wisely. I wouldn’t put it everywhere. I would try to optimize the loading so it would work better for end users.
+**Vadim:** So, `loading="lazy"` is an enhancement. Please use it, and use it wisely. I wouldn’t put it everywhere. I would try to optimize the loading so it would work better for end users.
 
-**Bruce:** Yeah. And what I like about it, as well, is it’s one of those things where the browsers are free to apply their own heuristics. So a browser might, for example, if it notices it’s got a really fast connection, it might disregard you saying loading="lazy", and load it anyway because it can. Again, it’s one of those things where you, as a developer, are giving the browser a hint as to what you deem important or not, but it is free to make its decisions based upon what it knows of the device, the current network capabilities, etc. And I like these kind of things because, developers, we are giving hints to the browser, rather than commanding the browser. The browser is a user agent, and it works for the user, not for the developer.
+**Bruce:** Yeah. And what I like about it, as well, is it’s one of those things where the browsers are free to apply their own heuristics. So a browser might, for example, if it notices it’s got a really fast connection, it might disregard you saying `loading="lazy"`, and load it anyway because it can. Again, it’s one of those things where you, as a developer, are giving the browser a hint as to what you deem important or not, but it is free to make its decisions based upon what it knows of the device, the current network capabilities, etc. And I like these kind of things because, developers, we are giving hints to the browser, rather than commanding the browser. The browser is a user agent, and it works for the user, not for the developer.
 
 **Vadim:** Yeah. I really like what is happening between us and browsers; like, we’re giving hints to each other. So browsers tell that user prefers reduced motion, and we’re hinting, browser, that we want this image to be loaded lazy. we’re not trying to implement something and hide it from browser. So browser now have an idea that something’s happening, and this is developer’s intention, so they could work around it.
 
@@ -149,9 +149,9 @@ layout: episode.njk
 
 **Bruce:** Absolutely.
 
-**Bruce:** And there’s a couple of other interesting things, in Firefox, coming up. I like their CSS, min, max and clamp. So you say, for example, if my viewport is less than this, my `<h1>` can’t go less than `3em`; if my viewport is wider than this, I want my `<h1>` to be `5em`; and if it’s in between, I want it to be `4vh`. It allows for a lot more of a terse syntax, and a lot more understandability, I think. it’s a good thing. it’s not going to change the world, but it makes our life just a little bit easier.
+**Bruce:** And there’s a couple of other interesting things, in Firefox, coming up. I like their CSS, `min`, `max` and `clamp`. So you can say, for example, if my viewport is less than this, my `<h1>` can’t go less than `3em`; if my viewport is wider than this, I want my `<h1>` to be `5em`; and if it’s in between, I want it to be `4vh`. It allows for a lot more of a terse syntax, and a lot more understandability, I think. it’s a good thing. it’s not going to change the world, but it makes our life just a little bit easier.
 
-**Vadim:** Not only that, I think there was a trend for developers to use viewport units just as they are, like phone size, like `5vw`, and it would break the zooming, it would make text unreadable at narrow viewports. So we should either use calc to combine viewport units with rems or pixels or whatever you prefer, or, in this case, use this clamp function to make minimum and maximum values, and something flexible between them.
+**Vadim:** Not only that, I think there was a trend for developers to use viewport units just as they are, like phone size, like `5vw`, and it would break the zooming, it would make text unreadable at narrow viewports. So we should either use calc to combine viewport units with rems or pixels or whatever you prefer, or, in this case, use this `clamp` function to make minimum and maximum values, and something flexible between them.
 
 **Bruce:** Again, yeah, working for the user.
 
