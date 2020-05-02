@@ -13,6 +13,15 @@
 
     [...document.querySelectorAll('.episode')].forEach(episode => {
         const player = episode.querySelector('.episode__audio');
+        const chapters = [...episode.querySelectorAll('.episode__chapter')];
+        for (const chapter of chapters) {
+            chapter.className += ' episode__chapter--has-button';
+            const timestampText = chapter.querySelector('.episode__time');
+            const timestampButton = document.createElement('button');
+            timestampButton.innerHTML = timestampText.innerHTML;
+            timestampButton.className = timestampText.className + ' episode__time--button';
+            chapter.replaceChild(timestampButton, timestampText);
+        }
         episode.addEventListener('click', click => {
             if (null !== click.target.closest('.episode__chapter')) {
                 const timestamp = click.target.classList.contains('episode__time') ? click.target :
