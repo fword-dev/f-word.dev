@@ -7,6 +7,13 @@
     background-color: var(--special-pink);
 }
 
+/* Link */
+
+.header__link:focus {
+    outline: 3px solid var(--special-blue);
+    outline-offset: -3px;
+}
+
 /* Logo */
 
 .header__logo {

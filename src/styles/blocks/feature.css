@@ -21,7 +21,17 @@
 /* Link */
 
 .feature__link {
+    display: inline-block;
     color: inherit;
+}
+
+.feature__link:focus {
+    outline: 3px solid var(--special-blue);
+    outline-offset: 2px;
+}
+
+.feature__link:hover {
+    color: var(--special-pink);
 }
 
 .feature__link::before {

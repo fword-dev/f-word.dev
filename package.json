@@ -2,13 +2,17 @@
   "private": true,
   "scripts": {
     "start": "eleventy --serve --quiet",
-    "11ty": "eleventy",
     "code": "editorconfig-checker",
     "html": "node-w3c-validator -f lint -evH -i dist/**/*.html",
-    "pack": "gulp build",
-    "build": "npm run 11ty && npm run pack",
+    "build": "rm -rf dist && eleventy && gulp build",
     "deploy": "cd dist && rsync --archive --compress --delete --exclude=.DS_Store . f-word.dev:/var/www/f-word.dev/html/"
   },
+  "browserslist": [
+    "last 2 version",
+    "not dead",
+    "not ie <= 11",
+    "iOS >= 12"
+  ],
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
     "@babel/core": "^7.9.0",
@@ -19,13 +23,19 @@
     "gulp-babel": "^8.0.0",
     "gulp-postcss": "^8.0.0",
     "gulp-replace": "^1.0.0",
+    "gulp-rev": "^9.0.0",
+    "gulp-rev-rewrite": "^3.0.3",
     "gulp-terser": "^1.2.0",
     "html-minifier": "^4.0.0",
     "markdown-it-named-headings": "^1.1.0",
-    "music-metadata": "^6.3.6",
-    "postcss": "^7.0.17",
+    "music-metadata": "^6.3.7",
+    "postcss": "^7.0.27",
     "postcss-csso": "^4.0.0",
     "postcss-import": "^12.0.1",
-    "pretty-data": "^0.40.0"
+    "pretty-data": "^0.40.0",
+    "rollup-stream": "^1.24.1",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-paths": "^3.0.1",
+    "vinyl-source-stream": "^2.0.0"
   }
 }

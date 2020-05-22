@@ -16,6 +16,11 @@
     color: var(--special-blue);
 }
 
+.social__link:focus {
+    outline: 3px solid var(--special-blue);
+    outline-offset: 2px;
+}
+
 .social__icon {
     display: block;
 }

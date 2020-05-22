@@ -20,6 +20,12 @@
     color: inherit;
 }
 
+.intro__tagline-link:focus {
+    outline: 3px solid var(--special-blue);
+    outline-offset: 2px;
+    box-decoration-break: ;
+}
+
 /* Services */
 
 .intro__services {
@@ -30,6 +36,24 @@
     margin: 0;
 }
 
+/* Link */
+
+.intro__services-link {
+    color: inherit;
+}
+
+.intro__services-link:hover {
+    transform: scale(1.2);
+}
+
+.intro__services-link:focus {
+    outline: 3px solid var(--special-blue);
+    outline-offset: 1px;
+}
+
+/* Icon */
+
 .intro__services-icon {
     display: block;
+    width: 38px;
 }
