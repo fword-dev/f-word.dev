@@ -102,7 +102,7 @@ layout: episode.njk
 
 **Bruce Lawson:** He consistently tells me off because I run a Mac, rather than a Linux box. And he’s a huge Linux fan but even he says, even most Linux fans think the Gentoo bunch are sort of slightly crazy because they want to compile everything from source code.
 
-**Bruce Lawson:** But they compile it once and then they’ve got a self-compiled binary on their machine, by sending down a metric shit ton of React/Angular to everybody’s client and you’re making them compile it, every time they do go to your website. Which as Matthew Somerville showed, isn’t the most performant approach.
+**Bruce Lawson:** But they compile it once and then they’ve got a self-compiled binary on their machine, by sending down a metric shit ton of React/Angular to everybody’s client and you’re making them compile it, every time they go to your website. Which as Matthew Somerville showed, isn’t the most performant approach.
 
 **Vadim Makeev:** But let’s take a step back. If your interface is highly dynamic, it consists of data and data is changing all the time, it probably makes sense to build some sort of a shell and then fill it with data and it will be rendering on the fly and making your interface. It’s probably a good fit for such interfaces.
 
@@ -146,13 +146,13 @@ layout: episode.njk
 
 **Vadim Makeev:** The first one is category, for example, P element, paragraph, it listed in two categories. It’s flow content and palpable content. I’m still not sure what palpable content is and it’s not relevant in our case but the most important is that, it’s flow content. And its content model is phrasing content. Basically, content model means that you can nest phrasing content into a paragraph and category means that, paragraph could be nested into flow content context, into the element that has content model of flow.
 
-**Vadim Makeev:** For example, P elements content model is phrase in content. If you want to nest H1, you have to check the category of the H1 tag and its flow content as well and it’s also heading and it’s also palpable. So it’s not phrasing, so by putting H1 into P element, you will get problems, at least with validator. But not only that, it will jump out of P. For example, you have some text and then heading and then another part text.
+**Vadim Makeev:** For example, P elements content model is phrasing content. If you want to nest H1, you have to check the category of the H1 tag and its flow content as well and it’s also heading and it’s also palpable. So it’s not phrasing, so by putting H1 into P element, you will get problems, at least with validator. But not only that, it will jump out of P. For example, you have some text and then heading and then another part text.
 
-**Vadim Makeev:** So you’ll have paragraph opened and closed, then you’ll have heading element and then you’ll have the second paragraph opened and closed. Basically, you will have three elements on one level, instead of two elements, one and nested into the other. If you wrap your heading into a link and you’ll nest it into paragraph, you’ll have much worse situation. You’ll have some weird empty tags lying around and it might be a big problem because some parts of your interphase could become links without your intention.
+**Vadim Makeev:** So you’ll have paragraph opened and closed, then you’ll have heading element and then you’ll have the second paragraph opened and closed. Basically, you will have three elements on one level, instead of two elements, one and nested into the other. If you wrap your heading into a link and you’ll nest it into paragraph, you’ll have much worse situation. You’ll have some weird empty tags lying around and it might be a big problem because some parts of your interface could become links without your intention.
 
-**Vadim Makeev:** So it’s a big problem and it seems like the problem is serious enough and the way you could actually check if your elements are allowed to be mastered, is checking the actual rendering in the browser and it’s a good thing that browsers these days actually render HTML by the spec, so they do it in the same way. You can check your browser rendering, you can put your web page into HTML validator but HTML validator, apparently it’s not up to date with the actual WHATWG spec.
+**Vadim Makeev:** So it’s a big problem and it seems like the problem is serious enough and the way you could actually check if your elements are allowed to be nested, is checking the actual rendering in the browser and it’s a good thing that browsers these days actually render HTML by the spec, so they do it in the same way. You can check your browser rendering, you can put your web page into HTML validator but HTML validator, apparently it’s not up to date with the actual WHATWG spec.
 
-**Vadim Makeev:** So in some cases, you will get some errors which are not errors, because according to spec. So it’s not unfortunately up to date but I think they’re getting there.e every time they introduce some updates, one day they will probably be compatible, 100% compatible with the current spec. But it’s really hard to do because it’s ever green. It’s living standard. Maybe it was easier back in W3C times but since it could actually break your interface, I think there should be an easier way to check if some elements could be nested or not.
+**Vadim Makeev:** So in some cases, you will get some errors which are not errors, because according to spec. So it’s not unfortunately up to date but I think they’re getting there. Every time they introduce some updates, one day they will probably be compatible, 100% compatible with the current spec. But it’s really hard to do because it’s ever green. It’s living standard. Maybe it was easier back in W3C times but since it could actually break your interface, I think there should be an easier way to check if some elements could be nested or not.
 
 **Vadim Makeev:** And there is one, some developer I know, he used to be a student in HTML academy. He built a service called, Can I Include? Something like, Can I use but can I include in this case? There are two fields and that’s it, that’s the whole interface. You put child tag name and you put parent tag name in the second field. How it works, it parses HTML specification and not every time in the browser but I think it pre-parsed.
 
@@ -164,13 +164,13 @@ layout: episode.njk
 
 **Bruce Lawson:** Because people were asking for it. It works the same in each browser. It was just not allowed, according to spec, so they changed the spec.
 
-**Vadim Makeev:** I think there are at least three cases of proper or improper nesting. In first case, it’s just not allowed by the spec and a validator will say that you’re doing something wrong. For example, if you nest a paragraph into an audit list for example, it will just stay there but you will do the wrong thing, according to the spec, according to validator.
+**Vadim Makeev:** I think there are at least three cases of proper or improper nesting. In first case, it’s just not allowed by the spec and a validator will say that you’re doing something wrong. For example, if you nest a paragraph into unordered list for example, it will just stay there but you will do the wrong thing, according to the spec, according to validator.
 
 **Vadim Makeev:** Here’s another example. If you put an address tag into paragraph, which I tried to do a couple of weeks ago. It will… Come on, I thought it’s phrasing content.
 
 **Bruce Lawson:** Vadim.
 
-**Vadim Makeev:** I thought it’s some sort of span or something. Yeah, I know I’m stupid. But still, I tried to do this and it just jumped out of paragraph and my paragraph became two paragraphs, with a dress tag in the middle. So the second case, it’s when they jump out. It’s like oil and water, you cannot mix them sort of thing.
+**Vadim Makeev:** I thought it’s some sort of span or something. Yeah, I know I’m stupid. But still, I tried to do this and it just jumped out of paragraph and my paragraph became two paragraphs, with address tag in the middle. So the second case, it’s when they jump out. It’s like oil and water, you cannot mix them sort of thing.
 
 **Vadim Makeev:** And there’s another case, you mentioned when everything works fine and it’s just a edge case that no-one ever thought of. For example, this H in the legend tag or I remember another change in the spec, when they allowed div element inside of definition list.
 
@@ -196,7 +196,7 @@ layout: episode.njk
 
 **Vadim Makeev:** Oh yeah. I actually remember the fourth use case. It’s when the content model of an element is transparent. For example, a link. If you nest something inside of link, there’s no way to check if it’s okay or not because link got this whatever content model. So you have to ask the outer element if it’s possible to nest something.
 
-**Vadim Makeev:** Basically, if you have link around your H1 element, is it fine or not? Who knows, until you check the outer element. If it’s paragraph, it’s not allowed to have H1 nested into link, that’s nested into paragraph. If it’s something like article or section element or just buddy, it’s fine.
+**Vadim Makeev:** Basically, if you have link around your H1 element, is it fine or not? Who knows, until you check the outer element. If it’s paragraph, it’s not allowed to have H1 nested into link, that’s nested into paragraph. If it’s something like article or section element or just body, it’s fine.
 
 **Bruce Lawson:** And there’s things like ins and del, which can be “block level” (in inverted commas) or “inline”, depending on how you want.
 
@@ -206,15 +206,15 @@ layout: episode.njk
 
 **Bruce Lawson:** Yeah. I mean, they were presentational because it was about how they get displayed in a browser and not a lot of people know this but all elements are inline by default.
 
-**Vadim Makeev:** Oh, so without browser style sheets, they are in line?
+**Vadim Makeev:** Oh, so without browser style sheets, they are inline?
 
 **Bruce Lawson:** Exactly.
 
 **Vadim Makeev:** Oh, I didn’t know that.
 
-**Bruce Lawson:** Exactly. It’s in the CSS specs. Everything’s inline, unless otherwise declared as either display:none. for things like title and meta charset and things. Or they’re designed as block.
+**Bruce Lawson:** Exactly. It’s in the CSS specs. Everything’s inline, unless otherwise declared as either display:none for things like title and meta charset and things. Or they’re defined as block.
 
-**Vadim Makeev:** So yeah, dear listeners, please check if your HTML is valid. I think it’s the easiest way to check if your nested your elements properly. Otherwise, if you see some elements jumping out, you’ll know why. It’s not just a dark or some black magic, it’s actual spec, seeing those elements, what to do.
+**Vadim Makeev:** So yeah, dear listeners, please check if your HTML is valid. I think it’s the easiest way to check if you nested your elements properly. Otherwise, if you see some elements jumping out, you’ll know why. It’s not just a dark or some black magic, it’s actual spec, saying those elements, what to do.
 
 **Bruce Lawson:** Yeah. I mean, although we have the HTML5 parser, which means that every browser’s going to give you the same DOM from your markup, validation still is a really useful debugging aid.
 
@@ -234,7 +234,7 @@ Okay. So recently, auntie Rachel or Rachel Andrew as many people know her, wrote
 
 **Vadim Makeev:** Yeah. Well they still publish once in a while, some updates on Opera Chromium engine but otherwise, nothing’s going on. But I designed and built this website back in 2013 and I used masonry layout on the main page. Main page is full of recent articles, like small previews and some pictures, some text and so, it’s like three column layout. I tried to use multi-column layout for this and it was totally fine.
 
-**Vadim Makeev:** But I realized that implementations in Safari and Chrome are buggy. And sometimes, I would get two or 300 pixel gap out of nowhere, at the bottom of the multi-column list. So I thought, I need to do some other way. Plus, if you use multi-column layout and the content goes down, the first column and only then it gets to the second one.if your content is very long, you want to probably feature the latest articles on top.
+**Vadim Makeev:** But I realized that implementations in Safari and Chrome are buggy. And sometimes, I would get 200 or 300 pixel gap out of nowhere, at the bottom of the multi-column list. So I thought, I need to do some other way. Plus, if you use multi-column layout and the content goes down, the first column and only then it gets to the second one, if your content is very long, you want to probably feature the latest articles on top.
 
 **Vadim Makeev:** So you’ll need some sort of different order. So I implemented this masonry layout script. I think it’s based on multi-column layout but when the page loads, it applies some JavaScript magic and it becomes the truly masonry layout. Basically what it does is, it replaces some elements and it rearranges those elements. And it’s a very clever script and it was a really nice thing to do and easy thing to do. I don’t think it impacts the rendering too much.
 
@@ -244,11 +244,11 @@ Okay. So recently, auntie Rachel or Rachel Andrew as many people know her, wrote
 
 **Vadim Makeev:** Yeah and I think I agree with Rachel and Fantasai and some other people on this thread that, it definitely does not belong into a multi-column spec, it does not belong into grid layout. It could be hacked into Flexbox but it also might be a problem. It’s quite different, so it probably makes sense to make display masonry, that would be a nice thing to do.
 
-**Vadim Makeev:** And I really like that the Firefox did this Chrome thing, shipped something without asking anyone and disabled it by default. Tit’s not like they didn’t know how to discuss things, without actual implementation in CSS WG. It’s not like it was necessary but it was necessary to promote it among developers, to force them to test it and think about it. And it was really, really helpful for the discussion.
+**Vadim Makeev:** And I really like that the Firefox did this Chrome thing, shipped something without asking anyone and disabled it by default. It’s not like they didn’t know how to discuss things, without actual implementation in CSS WG. It’s not like it was necessary but it was necessary to promote it among developers, to force them to test it and think about it. And it was really, really helpful for the discussion.
 
-**Vadim Makeev:** So it started in January and it stopped and then after Firefox implementation, it started over again and it’s really going somewhere. They’re going to decide soon on the next success working group meeting or somewhere later this year, how it’s going to implemented. I have no idea what it’s going to be but probably Grid level three or masonry layout level one or something like this but I would really like to see it shipping to browsers.
+**Vadim Makeev:** So it started in January and it stopped and then after Firefox implementation, it started over again and it’s really going somewhere. They’re going to decide soon on the next CSS Working Group meeting or somewhere later this year, how it’s going be implemented. I have no idea what it’s going to be but probably Grid level three or masonry layout level one or something like this but I would really like to see it shipping to browsers.
 
-**Bruce Lawson:** Yeah. I mean, we’ll put the link to Rachel’s article and the CSS Working Group discussion in the show notes but for those of you have time and inclination, the CSS Working Group would really like to know what you think.
+**Bruce Lawson:** Yeah. I mean, we’ll put the link to Rachel’s article and the CSS Working Group discussion in the show notes but for those of you who have time and inclination, the CSS Working Group would really like to know what you think.
 
 **Bruce Lawson:** So give it a whirl and tell them Vadim sent you because he was implementing masonry layouts seven years ago, folks. That’s just how ahead of the curve the man is.
 
@@ -258,17 +258,17 @@ Okay. So recently, auntie Rachel or Rachel Andrew as many people know her, wrote
 
 **Bruce Lawson:** Talking of trend setters, let’s talk about the Spice Girls. Vadim, tell me what you want, what you really, really want for the web to do next because Stephanie Stimac and Aaron Gustafson have been asking developers about the web they want.
 
-**Vadim Makeev:** I think I want to many things, so it’s pretty hard to pick one. Most of the things I would love to see, related not to the web or specs themselves but rather to browsers, implementing some cross browser implementations, rather than…
+**Vadim Makeev:** I think I want so many things, so it’s pretty hard to pick one. Most of the things I would love to see, related not to the web or specs themselves but rather to browsers, implementing some cross browser implementations, rather than…
 
 **Vadim Makeev:** So we have a lot of ideas implemented in one browser or maybe in two browsers. I would love them to be implemented across all the browsers. That’s the main problem with the current web for me but it’s so much better than it used to be, that I cannot complain.
 
-**Bruce Lawson:** No. Well The Web We Want survey, was something done by .. I don’t know where Stephanie works but Aaron definitely works for Microsoft on the Edge team and they asked developers to rank things they wanted. So for example, they were things like, most developers, 48% wanted accessibility tools front and center, indev tools. Only 1.6% said they want a source order view of a rearranged content, for example.
+**Bruce Lawson:** No. Well The Web We Want survey, was something done by .. I don’t know where Stephanie works but Aaron definitely works for Microsoft on the Edge team and they asked developers to rank things they wanted. So for example, they were things like, most developers, 48% wanted accessibility tools front and center, in devtools. Only 1.6% said they want a source order view of a rearranged content, for example.
 
 **Bruce Lawson:** They also asked about what you want from browsers. 29% said their first choice was browsers to localize data like dates and numbers. 38% wanted browsers to automatically fix accessibility problems. 32% wanted a standard API for event throttling and debouncing. I’m not sure I know what debouncing is. Maybe it’s to do with those elements jumping out, that we talked about first.
 
 **Bruce Lawson:** But interestingly from HTML and CSS, the runaway first choice, by 67% was better HTML forms. After that, it was better justification, with 12.5% saying it was their first choice. SVG to be fully stylable from SCSS, that was the first choice of 9.6%. And interestingly, the ability to flow content dynamically from one container to another using CSS, was only the first choice of 8.6%.
 
-**Bruce Lawson:** So that suggests to me that CSS regions isn’t nearly as important as work on better form controls and certainly more stylable form controls.
+**Bruce Lawson:** So that suggests to me that CSS Regions isn’t nearly as important as work on better form controls and certainly more stylable form controls.
 
 **Vadim Makeev:** I don’t really impressed by the results, to be honest. Imagine you would ask developers, which you like to have something like grid layout, five years ago? The native and great way of laying out elements on the page. They would say no, we have Flexbox. We have floats, we’re good but these days, we’re all super happy that we have Grid layout. The same applies to flowing content from one tag to another. It’s a brilliant idea.
 
@@ -276,13 +276,13 @@ Okay. So recently, auntie Rachel or Rachel Andrew as many people know her, wrote
 
 **Bruce Lawson:** Mm-hmm (affirmative). Mm-hmm (affirmative). Living on a prayer.
 
-**Vadim Makeev:** Just this morning, I tried to include external sprite with SVG that contains gradient. So basically, it’s a external symbol that I used inline in my HTML and it contains gradient. And gradients in SVG should be defined in def’s tag.
+**Vadim Makeev:** Just this morning, I tried to include external sprite with SVG that contains gradient. So basically, it’s a external symbol that I used inlined in my HTML and it contains gradient. And gradients in SVG should be defined in def’s tag.
 
 **Vadim Makeev:** But you cannot include def’s into symbol, so you have to put it one level up and when it’s one level up, it doesn’t render in Chrome and Safari. But it renders in Firefox, so you cannot use external SVG with gradient, only flat ones. Minor problem but there are hundreds of them.
 
-**Bruce Lawson:** Interesting you said that though, because you said you didn’t believe these numbers because web developers don’t ask for useful things, they ask for sexy things. To me, the CSS region is a sexy thing but few people ask for that and better form controls is enormously dull and un-sexy.
+**Bruce Lawson:** Interesting you said that though, because you said you didn’t believe these numbers because web developers don’t ask for useful things, they ask for sexy things. To me, the CSS Region is a sexy thing but few people ask for that and better form controls is enormously dull and un-sexy.
 
-**Vadim Makeev:** Yeah but I think the problem is that the level of noise in such polls, is very high. You should probably make the questions good enough or accurate enough, so it wouldn’t effect the answers. Or you should rely on empty inputs, where they would type their own ideas or you should suggest something yourself, instead of relying on user input. But otherwise, if you see 65 or a 80% of interest, it means something.
+**Vadim Makeev:** Yeah but I think the problem is that the level of noise in such polls, is very high. You should probably make the questions good enough or accurate enough, so it wouldn’t affect the answers. Or you should rely on empty inputs, where they would type their own ideas or you should suggest something yourself, instead of relying on user input. But otherwise, if you see 65 or a 80% of interest, it means something.
 
 **Vadim Makeev:** But in most cases, it’s just a noise and it’s just random thoughts and it’s just the actual wording of the question, that probably doesn’t look interesting to developers. So I don’t buy all the results but I definitely see some trends and I would really love to see the forms improved. They already shipped it, together with Chrome and Edge and other chromium based browsers, they’ll get it as well. It depends on who you are.
 
@@ -304,9 +304,9 @@ Okay. So recently, auntie Rachel or Rachel Andrew as many people know her, wrote
 
 **Vadim Makeev:** So basically, you want to align right the line that’s wrapped?
 
-**Bruce Lawson:** Well not necessarily a line right. I want some ability to put something there because another typographical convention is to indent it slightly from the left, so I want the ability… And the browser knows where the first line is because if you paragraph, colon, colon, first line and set it red and then amend the width of the browser window, the amount of lineage that is colored red, changes.
+**Bruce Lawson:** Well not necessarily align right. I want some ability to put something there because another typographical convention is to indent it slightly from the left, so I want the ability… And the browser knows where the first line is because if you do in paragraph, colon, colon, first line and set it red and then amend the width of the browser window, the amount of lineage that is colored red, changes.
 
-**Bruce Lawson:** So the browser knows but I don’t get the opportunity to say, if you have broken the line, please either put this content before it or align it right or indent left by one em. And it doesn’t matter because where the author put a line break, is actually part of the semantic of poetry.
+**Bruce Lawson:** So the browser knows but I don’t get the opportunity to say, if you have broken the line, please either put this content before it or align it right or indent it left by one em. And it doesn’t matter because where the author put a line break, is actually part of the semantic of poetry.
 
 **Vadim Makeev:** Yeah. I’m trying to figure out the way to solve it via CSS. So I’m not sure if, for the first line, so the element, text alignment and support it but I would go, P text align right and P first line text to line left, so everything would be aligned right, apart from the first line, that would be aligned left, for example. But I don’t think that alignment works in such suite of elements.
 
