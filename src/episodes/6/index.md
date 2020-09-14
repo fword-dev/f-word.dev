@@ -78,7 +78,7 @@ layout: episode.njk
 
 **Vadim:** But they renewed it.
 
-**Bruce:** Yeah, yeah. But Brian Cardall made an interesting point to me. He said, “Basically, if you’re funding a browser on search revenue, you’re basically funding it on advertising revenue because advertisers pay Google and Google pay Firefox.” In a time of massive, massive commercial and economic uncertainty, in COVID, apparently, organizations have just really tightened their advertising belts because they don’t know what the hell is going to happen with the pandemic. And that has had the knock-on effect that search revenues go down. And somebody from Firefox tweeted to me that’s what’s happened, it’s not really about the Google deal.
+**Bruce:** Yeah, yeah. But Brian Kardell made an interesting point to me. He said, “Basically, if you’re funding a browser on search revenue, you’re basically funding it on advertising revenue because advertisers pay Google and Google pay Firefox.” In a time of massive, massive commercial and economic uncertainty, in COVID, apparently, organizations have just really tightened their advertising belts because they don’t know what the hell is going to happen with the pandemic. And that has had the knock-on effect that search revenues go down. And somebody from Firefox tweeted to me that’s what’s happened, it’s not really about the Google deal.
 
 **Bruce:** So an unexpected victim of the pandemic there, that sounds like a plausible reason. Plus the fact they pissed up millions of dollars again the war with the Firefox OS, everybody has their Opera Unite moments.
 
