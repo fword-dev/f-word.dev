@@ -1,15 +1,20 @@
-module.exports = function(config) {
+const fs = require('fs');
+const htmlmin = require('html-minifier');
+const markdownIt = require('markdown-it');
+const markdownItNamedHeadings = require('markdown-it-named-headings');
+const music = require('music-metadata');
+const prettydata = require('pretty-data');
+
+module.exports = (config) => {
     // Audio Data Filters
 
-    config.addFilter('length', function(path) {
-        const fs = require('fs');
+    config.addFilter('length', (path) => {
         const stats = fs.statSync(path);
+
         return stats.size;
     });
 
-    function getDuration(path) {
-        const music = require('music-metadata');
-
+    const getDuration = (path) => {
         return music.parseFile(path)
             .then(metadata => {
                 const duration = parseFloat(metadata.format.duration);
@@ -28,7 +33,7 @@ module.exports = function(config) {
             });
     }
 
-    config.addNunjucksAsyncFilter('duration', async function (path, callback) {
+    config.addNunjucksAsyncFilter('duration', async (path, callback) => {
         const duration = await getDuration(path);
 
         callback(null, duration);
@@ -36,8 +41,7 @@ module.exports = function(config) {
 
     // HTML Minification
 
-    config.addFilter('htmlmin', function(value) {
-        let htmlmin = require('html-minifier');
+    config.addFilter('htmlmin', (value) => {
         return htmlmin.minify(
             value, {
                 removeComments: true,
@@ -48,32 +52,30 @@ module.exports = function(config) {
 
     config.addTransform('htmlmin', (content, outputPath) => {
         if(outputPath && outputPath.endsWith('.html')) {
-            let htmlmin = require('html-minifier');
-            let result = htmlmin.minify(
+            const result = htmlmin.minify(
                 content, {
                     removeComments: true,
                     collapseWhitespace: true
                 }
             );
+
             return result;
         }
+
         return content;
     });
 
     // XML Minification for RSS
 
-    config.addTransform('xmlmin', function(content, outputPath) {
+    config.addTransform('xmlmin', (content, outputPath) => {
         if(outputPath && outputPath.endsWith('.xml')) {
-            let prettydata = require('pretty-data');
             return prettydata.pd.xmlmin(content);
         }
+
         return content;
     });
 
     // Markdown Options
-
-    let markdownIt = require('markdown-it');
-    let markdownItNamedHeadings = require('markdown-it-named-headings');
 
     config.setLibrary('md', markdownIt({
         html: true
