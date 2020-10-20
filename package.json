@@ -28,7 +28,7 @@
     "gulp-terser": "^1.4.0",
     "html-minifier": "^4.0.0",
     "markdown-it-named-headings": "^1.1.0",
-    "music-metadata": "^7.4.0",
+    "music-metadata": "^7.4.1",
     "postcss": "^8.1.2",
     "postcss-csso": "^5.0.0",
     "postcss-import": "^12.0.1",
