@@ -1,6 +1,7 @@
 const babel = require('gulp-babel');
 const buffer = require('vinyl-buffer');
 const del = require('del');
+const fs = require('fs');
 const gulp = require('gulp');
 const paths = require('vinyl-paths');
 const postcss = require('gulp-postcss');
@@ -13,7 +14,7 @@ const terser = require('gulp-terser');
 
 // Styles
 
-gulp.task('styles', () => {
+const buildStyles = () => {
     return gulp.src('dist/styles/index.css')
         .pipe(postcss([
             require('postcss-import'),
@@ -21,11 +22,11 @@ gulp.task('styles', () => {
         ]))
         .pipe(replace(/\.\.\//g, ''))
         .pipe(gulp.dest('dist'));
-});
+};
 
 // Scripts
 
-gulp.task('scripts', function() {
+const buildScripts = () => {
     return rollup({
         input: 'src/scripts/index.js',
         format: 'es',
@@ -37,11 +38,11 @@ gulp.task('scripts', function() {
     }))
     .pipe(terser())
     .pipe(gulp.dest('dist'));
-});
+};
 
 // Paths
 
-gulp.task('paths', () => {
+const replacePaths = () => {
     return gulp.src('dist/**/*.html')
         .pipe(replace(
             /(<link rel="stylesheet" href=")\/styles(\/index.css">)/, '$1$2'
@@ -50,11 +51,11 @@ gulp.task('paths', () => {
             /(<script) type="module"( src=")\/scripts(\/index.js">)/, '$1$2$3'
         ))
         .pipe(gulp.dest('dist'));
-});
+};
 
 // Cache
 
-gulp.task('cache:hash', () => {
+const cacheRevision = () => {
     return gulp.src([
             'dist/**/*.{css,js,svg,png,woff2}',
             '!dist/images/cover.png',
@@ -67,40 +68,41 @@ gulp.task('cache:hash', () => {
         .pipe(gulp.dest('dist'))
         .pipe(rev.manifest('rev.json'))
         .pipe(gulp.dest('dist'));
-});
+};
 
-gulp.task('cache:replace', () => {
+const cacheRewrite = () => {
+    const manifest = fs.readFileSync('dist/rev.json');
     return gulp.src([
             'dist/**/*.{html,css}',
             'dist/manifest-*.json',
         ])
         .pipe(revRewrite({
-            manifest:
-            gulp.src('dist/rev.json').pipe(paths(del))
+            manifest
         }))
         .pipe(gulp.dest('dist'));
-});
+};
 
-gulp.task('cache', gulp.series(
-    'cache:hash',
-    'cache:replace',
-));
+const cacheFiles = gulp.series(
+    cacheRevision,
+    cacheRewrite,
+);
 
 // Clean
 
-gulp.task('clean', () => {
+const cleanFiles = () => {
     return del([
         'dist/styles',
         'dist/scripts',
+        'dist/rev.json',
     ]);
-});
+};
 
 // Build
 
-gulp.task('build', gulp.series(
-    'styles',
-    'scripts',
-    'paths',
-    'clean',
-    'cache',
-));
+exports.default = gulp.series(
+    buildStyles,
+    buildScripts,
+    replacePaths,
+    cacheFiles,
+    cleanFiles,
+);
