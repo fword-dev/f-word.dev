@@ -55,7 +55,7 @@ layout: episode.njk
 
 **Bruce:** Number one, can I have your autograph because you’re obviously a massive star. But yeah, I mean that’s entertainment, isn’t it? They want the blood. They want the knockdown punch. Lots of people are saying, “Yes, you’ve got a good point.” That might make a web standard, but it doesn’t actually make entertainment. I thought about you. I mean, I’ve been working at home for 12 years, which is… I mean, it’s great now because my life, okay, my social life has been disrupted, but my actual work has continued much as before. And even before COVID, I couldn’t imagine working in an office environment again, it sounds like hell to me, but I can imagine that some people miss it.
 
-**Vadim:** I tried to defend this idea, and I’m not 100% remote worker myself. It was a game for me, try to defend this idea. And I think I exceeded, but overall score was against our team. So…
+**Vadim:** I tried to defend this idea, and I’m not 100% remote worker myself. It was a game for me, try to defend this idea. And I think I succeeded, but overall score was against our team. So…
 
 **Bruce:** I can understand. I mean, you’ve got the kind of face that people want in their office. I’ve definitely got a face for remote working. So-
 
