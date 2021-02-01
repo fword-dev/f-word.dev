@@ -7,6 +7,10 @@
     "build": "rm -rf dist && eleventy && gulp",
     "deploy": "cd dist && rsync --archive --compress --delete --exclude=.DS_Store . f-word.dev:/var/www/f-word.dev/html/"
   },
+  "engines": {
+    "node": "14.x",
+    "npm": "6.x"
+  },
   "browserslist": [
     "last 2 version",
     "not dead",
