@@ -17,4 +17,4 @@ Deploy requires SSH access to the server.
 
 ---
 Licensed under [CC BY-NC-ND 4.0](LICENSE.md),
-built on [Eleventy](https://www.11ty.io/).
+built on [Eleventy](https://www.11ty.dev/).
