@@ -71,7 +71,7 @@ permalink: feed/index.xml
         <itunes:duration>{{ filePath | trim | duration }}</itunes:duration>
         <itunes:author>{{ episode.data.hosts | join(', ') }}</itunes:author>
         <itunes:explicit>{{ data.explicit }}</itunes:explicit>
-        <itunes:summary>{{ episode.data.title }}.</itunes:summary>
+        <itunes:summary><![CDATA[{{ description | htmlmin | safe }}]]></itunes:summary>
     </item>
 
 {%- endfor -%}
