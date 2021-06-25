@@ -277,23 +277,23 @@ layout: episode.njk
 
 **Bruce:** Live a little.
 
-**Vadim:** Our good old friend, Brian Cardo posted Hass [inaudible 00:24:46] post, at the beginning of May, I believe. So he announced the intent to implement for the Hass pseudo-class, which is a rather shocking thing to hear because I think it’s already 10 years old, this idea, and they used to have it in jQuery.
+**Vadim:** Our good old friend, Brian Kardell posted his 'Can I :has?' post, at the beginning of May, I believe. So he announced the intent to implement for the :has pseudo-class, which is a rather shocking thing to hear because I think it’s already 10 years old, this idea, and they used to have it in jQuery.
 
 **Bruce:** They still have it in jQuery, yeah.
 
 **Vadim:** Yeah. It sounds like… And it’s a thing to do, and it’s a thing to implement, but it used to be a holy grail of CSS lecture, which is very tempting to have and very hard to implement.
 
-**Vadim:** And one company approached [inaudible 00:25:22] and I guess, Brian personally, which is I/O. Never heard about it. But then Brian explained that they have AdBlock browser and AdBlock extensions.
+**Vadim:** And one company approached Igalia and I guess, Brian personally, which is Eyeo. Never heard about it. But then Brian explained that they have AdBlock browser and AdBlock extensions.
 
-**Vadim:** I realized that our old friend [inaudible 00:25:35] from Opera and [inaudible 00:25:36] days is working there. So I guess he is somehow related to this intent to implement.
+**Vadim:** I realized that our old friend Shwetank from Opera Devrel days is working there. So I guess he is somehow related to this intent to implement.
 
 **Vadim:** And at the beginning of June, we have it implemented in Chrome Canary. To be honest, I haven’t played with it personally. And I think I’m going to record a video for my blog in the next few days, just trying it out.
 
-**Vadim:** But after Brian published his announcement, one month later, we have it in Chrome Canary. And there was a really nice blog post published a few days ago on Smashing magazine explaining why on earth you would need a Hass pseudo-class.
+**Vadim:** But after Brian published his announcement, one month later, we have it in Chrome Canary. And there was a really nice blog post published a few days ago on Smashing magazine explaining why on earth you would need a :has pseudo-class.
 
-**Vadim:** You would think that everyone knows what it’s for and how we would use it to be able. To explain this Hass selector, it’s really important to have really good use cases for that and to show some UIs and some code.
+**Vadim:** You would think that everyone knows what it’s for and how we would use it. To be able to explain this :has selector, it’s really important to have really good use cases for that and to show some UIs and some code.
 
-**Vadim:** And that’s what Adrien [inaudible 00:26:29] actually did. He tried to explain not how the actual selector works, but where it could be applied in your interfaces.
+**Vadim:** And that’s what Adrian Bece actually did. He tried to explain not how the actual selector works, but where it could be applied in your interfaces.
 
 **Vadim:** And only from his blog post, I realized that we actually have something similar in our CSS already. For example, empty pseudo-class actually checks if there’s anything inside of this element.
 
@@ -301,7 +301,7 @@ layout: episode.njk
 
 **Vadim:** So we used to have selectors and we’ll still have the majority of selectors working the way that you have your target selector on the right. So you’re applying styles to the part of a selector that goes to the right.
 
-**Vadim:** Now we have selectors that could be calculated, vice versa. So you can have your selector on the left side and the colon Hass function. And then everything will be applied to the actual element with a Hass pseudo-class, not to the right part of your selector.
+**Vadim:** Now we have selectors that could be calculated, vice versa. So you can have your selector on the left side and the colon :has  function. And then everything will be applied to the actual element with a :has  pseudo-class, not to the right part of your selector.
 
 **Vadim:** A typical example, you can check if your link has IMG element inside and apply some styles, not to IMG but to a element so every link without image who would get certain styles.
 
@@ -315,11 +315,11 @@ layout: episode.njk
 
 **Bruce:** Much more power.
 
-**Vadim:** Yeah, much more power. That’s true. So I think because they implemented focus within, I’m not exactly sure, but I think that it helped them to implement the same thing for Hass element.
+**Vadim:** Yeah, much more power. That’s true. So I think because they implemented focus within, I’m not exactly sure, but I think that it helped them to implement the same thing for :has  element.
 
 **Vadim:** And the problem used to be that this thing is full of circular dependencies. It’s really hard to calculate certain things to be at 60 frames per second, but they managed to overcome this issue. It’s still in Canary.
 
-**Vadim:** I guess it’s still behind a flag. It’s not implemented in Firefox, Safari or anywhere else, but all of a sudden, it is possible. All of a sudden, container queries are possible. All of a sudden, Hass pseudo-class is possible. I wonder what’s going on these days.
+**Vadim:** I guess it’s still behind a flag. It’s not implemented in Firefox, Safari or anywhere else, but all of a sudden, it is possible. All of a sudden, container queries are possible. All of a sudden, :has  pseudo-class is possible. I wonder what’s going on these days.
 
 **Bruce:** I was thinking about this after our talk with Miriam Suzanne last time. I’m thinking with my gut. And when you think with your gut, you have to acknowledge that sometimes you’ve got shit for brains.
 
