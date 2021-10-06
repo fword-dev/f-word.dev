@@ -9,36 +9,29 @@ hosts:
 chapters:
   - time: '00:40'
     title: 'Eric in Igalia'
-    list:
-      - title: 'First Day at Igalia'
-        link: 'https://meyerweb.com/eric/thoughts/2021/02/15/first-day-at-igalia/'
-      - title: 'Week One'
-        link: 'https://meyerweb.com/eric/thoughts/2021/02/22/week-one/'
-      - title: 'Igalia'
-        link: 'https://www.igalia.com/'
   - time: '07:50'
     title: 'What’s coming'
-    list:
-      - title: 'Focus-visible in WebKit'
-        link: 'https://opencollective.com/open-prioritization/projects/focus-visible-in-webkit'
-      - title: 'CSS Working Group Drafts'
-        link: 'https://github.com/w3c/csswg-drafts'
   - time: '22:54'
     title: 'CSS Nesting'
-    list:
-      - title: 'CSS Nesting Module (2020)'
-        link: 'https://drafts.csswg.org/css-nesting-1/'
-      - title: 'CSS Nesting Module (2015)'
-        link: 'https://tabatkins.github.io/specs/css-nesting/'
-      - title: 'Chromium issue'
-        link: 'https://bugs.chromium.org/p/chromium/issues/detail?id=1095675'
   - time: '34:34'
     title: 'Cascading Layers'
-    list:
-      - title: 'CSS Cascading and Inheritance Level 5'
-        link: 'https://www.w3.org/TR/css-cascade-5/#at-ruledef-layer'
-tags: episode
-layout: episode.njk
+notes: |
+  ### Eric in Igalia
+  - [First Day at Igalia](https://meyerweb.com/eric/thoughts/2021/02/15/first-day-at-igalia/)
+  - [Week One](https://meyerweb.com/eric/thoughts/2021/02/22/week-one/)
+  - [Igalia](https://www.igalia.com/)
+
+  ### What’s coming
+  - [Focus-visible in WebKit](https://opencollective.com/open-prioritization/projects/focus-visible-in-webkit)
+  - [CSS Working Group Drafts](https://github.com/w3c/csswg-drafts)
+
+  ### CSS Nesting
+  - [CSS Nesting Module (2020)](https://drafts.csswg.org/css-nesting-1/)
+  - [CSS Nesting Module (2015)](https://tabatkins.github.io/specs/css-nesting/)
+  - [Chromium issue](https://bugs.chromium.org/p/chromium/issues/detail?id=1095675)
+
+  ### Cascading Layers
+  - [CSS Cascading and Inheritance Level 5](https://www.w3.org/TR/css-cascade-5/#at-ruledef-layer)
 ---
 
 ### Intro

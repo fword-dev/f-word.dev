@@ -6,40 +6,32 @@ hosts:
   - Bruce Lawson
   - Vadim Makeev
 chapters:
-  - title: 'Npm and GitHub'
-    time: '02:02'
-    list:
-      - title: 'Npm is joining GitHub, Nat Friedman'
-        link: https://github.blog/2020-03-16-npm-is-joining-github/
-      - title: 'The economics of open source, C J Silverio'
-        link: https://youtu.be/MO8hZlgK5zc
-      - title: 'The Entropic Package Manager'
-        link: https://www.entropic.dev/
-  - title: 'Closing HTML tags'
-    time: '08:39'
-    list:
-      - title: 'Stop using closing tags for the HTML elements, Tab Atkins'
-        link: https://twitter.com/tabatkins/status/1240027435246051328
-      - title: 'HTML Living Standard: Optional Tags'
-        link: https://html.spec.whatwg.org/multipage/syntax.html%23optional-tags
-      - title: 'The future of loading CSS, Jake Archibald'
-        link: https://jakearchibald.com/2016/link-in-body/
-  - title: 'Disappearing User-Agent'
-    time: '19:19'
-    list:
-      - title: 'My findings after browsing the web without a UA header for one week, Šime Vidas'
-        link: https://webplatform.news/issues/2020-03-19
-  - title: 'Safari vs PWA'
-    time: '27:36'
-    list:
-      - title: 'Full Third-Party Cookie Blocking and More, John Wilander'
-        link: https://webkit.org/blog/10218/full-third-party-cookie-blocking-and-more/
-      - title: 'Apple just killed Offline Web Apps, Aral Balkan'
-        link: https://ar.al/2020/03/25/apple-just-killed-offline-web-apps-while-purporting-to-protect-your-privacy-why-thats-a-bad-thing-and-why-you-should-care/
-      - title: 'Apple’s attack on service workers, Jeremy Keith'
-        link: https://adactio.com/journal/16619
-tags: episode
-layout: episode.njk
+  - time: '02:02'
+    title: 'Npm and GitHub'
+  - time: '08:39'
+    title: 'Closing HTML tags'
+  - time: '19:19'
+    title: 'Disappearing User-Agent'
+  - time: '27:36'
+    title: 'Safari vs PWA'
+notes: |
+  ### Npm and GitHub
+  - [Npm is joining GitHub, Nat Friedman](https://github.blog/2020-03-16-npm-is-joining-github/)
+  - [The economics of open source, C J Silverio](https://youtu.be/MO8hZlgK5zc)
+  - [The Entropic Package Manager](https://www.entropic.dev/)
+
+  ### Closing HTML tags
+  - [Stop using closing tags for the HTML elements, Tab Atkins](https://twitter.com/tabatkins/status/1240027435246051328)
+  - [HTML Living Standard: Optional Tags](https://html.spec.whatwg.org/multipage/syntax.html%23optional-tags)
+  - [The future of loading CSS, Jake Archibald](https://jakearchibald.com/2016/link-in-body/)
+
+  ### Disappearing User-Agent
+  - [My findings after browsing the web without a UA header for one week, Šime Vidas](https://webplatform.news/issues/2020-03-19)
+
+  ### Safari vs PWA
+  - [Full Third-Party Cookie Blocking and More, John Wilander](https://webkit.org/blog/10218/full-third-party-cookie-blocking-and-more/)
+  - [Apple just killed Offline Web Apps, Aral Balkan](https://ar.al/2020/03/25/apple-just-killed-offline-web-apps-while-purporting-to-protect-your-privacy-why-thats-a-bad-thing-and-why-you-should-care/)
+  - [Apple’s attack on service workers, Jeremy Keith](https://adactio.com/journal/16619)
 ---
 
 ### Intro

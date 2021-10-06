@@ -6,42 +6,33 @@ hosts:
   - Bruce Lawson
   - Vadim Makeev
 chapters:
-  - title: 'Apple vs. EU'
-    time: '01:20'
-    list:
-      - title: 'Commission opens investigations into Apple’s App Store rules'
-        link: https://ec.europa.eu/commission/presscorner/detail/en/ip_20_1073
-      - title: 'EU’s Apple suit bares tech’s global antitrust threat'
-        link: https://www.axios.com/eus-apple-suit-bares-techs-global-antitrust-threat-1c377e06-2307-4005-91a1-e9b4f062ec8c.html
-      - title: 'Apple threatens to move Basecamp’s new email app to trash'
-        link: https://www.wired.com/story/apple-threatens-basecamp-email-app/
-  - title: 'News for form slappers'
-    time: '17:03'
-    list:
-      - title: 'The form attribute'
-        link: https://funwithforms.com/posts/form-attribute/
-      - title: 'Form design patterns'
-        link: https://formdesignpatterns.com/
-      - title: 'HTML5 Accessibility'
-        link: https://www.html5accessibility.com/
-  - title: 'Where’s Houdini'
-    time: '28:51'
-    list:
-      - title: 'CSS Houdini'
-        link: https://iamvdo.me/en/blog/css-houdini
-      - title: 'Is Houdini ready yet‽'
-        link: https://ishoudinireadyyet.com/
-      - title: 'CSS Canvas Drawing'
-        link: https://webkit.org/blog/176/css-canvas-drawing/
-  - title: 'Browser bugs and Web compat'
-    time: '39:12'
-    list:
-      - title: 'How to file a good browser bug'
-        link: https://web.dev/how-to-file-a-good-bug/
-      - title: 'Web Compat'
-        link: https://webcompat.com/
-tags: episode
-layout: episode.njk
+  - time: '01:20'
+    title: 'Apple vs. EU'
+  - time: '17:03'
+    title: 'News for form slappers'
+  - time: '28:51'
+    title: 'Where’s Houdini'
+  - time: '39:12'
+    title: 'Browser bugs and Web compat'
+notes: |
+  ### Apple vs. EU
+  - [Commission opens investigations into Apple’s App Store rules](https://ec.europa.eu/commission/presscorner/detail/en/ip_20_1073)
+  - [EU’s Apple suit bares tech’s global antitrust threat](https://www.axios.com/eus-apple-suit-bares-techs-global-antitrust-threat-1c377e06-2307-4005-91a1-e9b4f062ec8c.html)
+  - [Apple threatens to move Basecamp’s new email app to trash](https://www.wired.com/story/apple-threatens-basecamp-email-app/)
+
+  ### News for form slappers
+  - [The form attribute](https://funwithforms.com/posts/form-attribute/)
+  - [Form design patterns](https://formdesignpatterns.com/)
+  - [HTML5 Accessibility](https://www.html5accessibility.com/)
+
+  ### Where’s Houdini
+  - [CSS Houdini](https://iamvdo.me/en/blog/css-houdini)
+  - [Is Houdini ready yet‽](https://ishoudinireadyyet.com/)
+  - [CSS Canvas Drawing](https://webkit.org/blog/176/css-canvas-drawing/)
+
+  ### Browser bugs and Web compat
+  - [How to file a good browser bug](https://web.dev/how-to-file-a-good-bug/)
+  - [Web Compat](https://webcompat.com/)
 ---
 
 ### Apple vs. EU

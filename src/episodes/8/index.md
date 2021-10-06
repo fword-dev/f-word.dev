@@ -8,34 +8,28 @@ hosts:
 chapters:
   - time: '00:43'
     title: 'Browser detection'
-    list:
-      - title: '51Degrees'
-        link: https://51degrees.com
-      - title: 'A Browser Sniffing Warning: The Trouble With Acid3 and TinyMCE'
-        link: https://dev.opera.com/articles/a-browser-sniffing-warning-the-trouble/
   - time: '05:25'
     title: 'User Agent freeze'
-    list:
-      - title: 'Intent to Deprecate and Freeze: The User-Agent string'
-        link: https://groups.google.com/a/chromium.org/g/blink-dev/c/-2JIRNMWJ7s/m/yHe4tQNLCgAJ
-      - title: 'Building a privacy-first future for web advertising'
-        link: https://blog.google/products/ads-commerce/2021-01-privacy-sandbox/
-      - title: 'BBC coverage of CMA and User-Agents'
-        link: https://www.bbc.co.uk/news/technology-55219750
   - time: '12:43'
     title: 'Possible consequences'
-    list:
-      - title: 'Marketers for an Open Web response to the CMA’s investigation into Google’s Privacy Sandbox'
-        link: https://marketersforanopenweb.com/marketers-for-an-open-web-response-to-the-cmas-investigation-into-googles-privacy-sandbox/
-      - title: 'W3C TPAC Session on User-Agent'
-        link: https://www.w3.org/2020/10/27-uach-minutes.html
   - time: '21:08'
     title: 'A right to reply'
-    list:
-      - title: 'Why can’t supply chains be trusted on the web?'
-        link: https://github.com/w3ctag/security-questionnaire/issues/83
-tags: episode
-layout: episode.njk
+notes: |
+  ### Browser detection
+  - [51Degrees](https://51degrees.com)
+  - [A Browser Sniffing Warning: The Trouble With Acid3 and TinyMCE](https://dev.opera.com/articles/a-browser-sniffing-warning-the-trouble/)
+
+  ### User Agent freeze
+  - [Intent to Deprecate and Freeze: The User-Agent string](https://groups.google.com/a/chromium.org/g/blink-dev/c/-2JIRNMWJ7s/m/yHe4tQNLCgAJ)
+  - [Building a privacy-first future for web advertising](https://blog.google/products/ads-commerce/2021-01-privacy-sandbox/)
+  - [BBC coverage of CMA and User-Agents](https://www.bbc.co.uk/news/technology-55219750)
+
+  ### Possible consequences
+  - [Marketers for an Open Web response to the CMA’s investigation into Google’s Privacy Sandbox](https://marketersforanopenweb.com/marketers-for-an-open-web-response-to-the-cmas-investigation-into-googles-privacy-sandbox/)
+  - [W3C TPAC Session on User-Agent](https://www.w3.org/2020/10/27-uach-minutes.html)
+
+  ### A right to reply
+  - [Why can’t supply chains be trusted on the web?](https://github.com/w3ctag/security-questionnaire/issues/83)
 ---
 
 ### Intro

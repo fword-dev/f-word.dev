@@ -6,47 +6,38 @@ hosts:
   - Bruce Lawson
   - Vadim Makeev
 chapters:
-  - title: 'Chrome 81: badging, MIDI, Fugu'
-    time: '01:46'
-    list:
-      - title: 'New in Chrome 81'
-        link: https://developers.google.com/web/updates/2020/04/nic81
-      - title: 'BopPad by Keith McMillen'
-        link: https://www.keithmcmillen.com/products/boppad/
-  - title: 'Firefox 75: lazy loading, clamp'
-    time: '07:27'
-    list:
-      - title: 'Firefox 75: Ambitions for April'
-        link: https://hacks.mozilla.org/2020/04/firefox-75-ambitions-for-april/
-  - title: 'The future of HTML forms'
-    time: '13:36'
-    list:
-      - title: 'HTML isn’t done! by Nicole Sullivan, Greg Whitworth'
-        link: https://youtu.be/ZFvPLrKZywA
-      - title: 'Can we please style the <select> control?! by Greg Whitworth'
-        link: https://www.gwhitworth.com/blog/2019/10/can-we-please-style-select/
-      - title: 'Having an open dialog by Scott O’Hara'
-        link: https://www.scottohara.me/blog/2019/03/05/open-dialog.html
-      - title: 'Polyfill for :focus-visible by Rob Dodson'
-        link: https://github.com/WICG/focus-visible
-  - title: 'Gaps in Safari release notes'
-    time: '25:41'
-    list:
-      - title: 'Can I use: Gap in Grid Layout'
-        link: https://caniuse.com/#feat=mdn-css_properties_gap_grid_context
-      - title: 'WebKit: Rename gutter properties to remove "grid-" prefix'
-        link: https://bugs.webkit.org/show_bug.cgi?id=180290
-      - title: 'Safari release notes'
-        link: https://developer.apple.com/documentation/safari_release_notes
-  - title: 'Webdev glossary, a11y for designers'
-    time: '29:56'
-    list:
-      - title: 'My new book covering about 2,000 key terms for developers by Jens Meiert'
-        link: https://meiert.com/en/blog/the-web-development-glossary/
-      - title: 'Accessibility for UX designers by Frozen Rockets'
-        link: https://accessibility-for-teams.com/accessibility-for-ux-designers
-tags: episode
-layout: episode.njk
+  - time: '01:46'
+    title: 'Chrome 81: badging, MIDI, Fugu'
+  - time: '07:27'
+    title: 'Firefox 75: lazy loading, clamp'
+  - time: '13:36'
+    title: 'The future of HTML forms'
+  - time: '25:41'
+    title: 'Gaps in Safari release notes'
+  - time: '29:56'
+    title: 'Webdev glossary, a11y for designers'
+notes: |
+  ### Chrome 81: badging, MIDI, Fugu
+  - [New in Chrome 81](https://developers.google.com/web/updates/2020/04/nic81)
+  - [BopPad by Keith McMillen](https://www.keithmcmillen.com/products/boppad/)
+
+  ### Firefox 75: lazy loading, clamp
+  - [Firefox 75: Ambitions for April](https://hacks.mozilla.org/2020/04/firefox-75-ambitions-for-april/)
+
+  ### The future of HTML forms
+  - [HTML isn’t done! by Nicole Sullivan, Greg Whitworth](https://youtu.be/ZFvPLrKZywA)
+  - [Can we please style the `<select>` control?! by Greg Whitworth](https://www.gwhitworth.com/blog/2019/10/can-we-please-style-select/)
+  - [Having an open dialog by Scott O’Hara](https://www.scottohara.me/blog/2019/03/05/open-dialog.html)
+  - [Polyfill for :focus-visible by Rob Dodson](https://github.com/WICG/focus-visible)
+
+  ### Gaps in Safari release notes
+  - [Can I use: Gap in Grid Layout](https://caniuse.com/#feat=mdn-css_properties_gap_grid_context)
+  - [WebKit: Rename gutter properties to remove "grid-" prefix](https://bugs.webkit.org/show_bug.cgi?id=180290)
+  - [Safari release notes](https://developer.apple.com/documentation/safari_release_notes)
+
+  ### Webdev glossary, a11y for designers
+  - [My new book covering about 2,000 key terms for developers by Jens Meiert](https://meiert.com/en/blog/the-web-development-glossary/)
+  - [Accessibility for UX designers by Frozen Rockets](https://accessibility-for-teams.com/accessibility-for-ux-designers)
 ---
 
 ### Intro

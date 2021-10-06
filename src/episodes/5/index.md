@@ -9,43 +9,35 @@ hosts:
 chapters:
   - time: '00:56'
     title: 'Brian and Igalia'
-    list:
-      - title: 'Open prioritization and advocacy'
-        link: https://bkardell.com/blog/OpenPrioritization.html
-      - title: 'Crowdfunding Web platform features with Open Prioritization'
-        link: https://www.smashingmagazine.com/2020/07/crowdfunding-web-platform-features-open-prioritization/
-      - title: 'Contributions to Web platform interoperability'
-        link: https://blog.amp.dev/2020/07/06/contributions-to-web-platform-interoperability-first-half-of-2020/
   - time: '05:42'
     title: 'Features overview'
-    list:
-      - title: 'Implementing selector list argument of :not() in Chrome'
-        link: https://blogs.igalia.com/obrufau/2020/07/13/open-prioritization-for-not-selector.html
-      - title: 'Open Prioritization and CSS Containment'
-        link: https://blogs.igalia.com/mrego/2020/07/13/open-prioritization-and-css-contain/
-      - title: 'Igalia’s contribution to the Mozilla project and Open Prioritization'
-        link: http://frederic-wang.fr/igalia-contribution-to-mozilla-and-open-prioritization.html
-      - title: 'Unlocking Colors'
-        link: https://bkardell.com/blog/Unlocking-Colors.html
   - time: '16:27'
     title: 'Why devs should pay'
-    list:
-      - title: 'Picture element implementation in Blink'
-        link: https://www.indiegogo.com/projects/picture-element-implementation-in-blink/#/
   - time: '24:07'
     title: 'JavaScript and other ideas'
-    list:
-      - title: 'Compilers and programming languages'
-        link: https://www.igalia.com/technology/compilers
-      - title: 'TC39'
-        link: https://tc39.es/
   - time: '28:25'
     title: 'MathML and corporate support'
-    list:
-      - title: 'MathML in Chromium'
-        link: https://mathml.igalia.com/
-tags: episode
-layout: episode.njk
+notes: |
+  ### Brian and Igalia
+  - [Open prioritization and advocacy](https://bkardell.com/blog/OpenPrioritization.html)
+  - [Crowdfunding Web platform features with Open Prioritization](https://www.smashingmagazine.com/2020/07/crowdfunding-web-platform-features-open-prioritization/)
+  - [Contributions to Web platform interoperability](https://blog.amp.dev/2020/07/06/contributions-to-web-platform-interoperability-first-half-of-2020/)
+
+  ### Features overview
+  - [Implementing selector list argument of :not() in Chrome](https://blogs.igalia.com/obrufau/2020/07/13/open-prioritization-for-not-selector.html)
+  - [Open Prioritization and CSS Containment](https://blogs.igalia.com/mrego/2020/07/13/open-prioritization-and-css-contain/)
+  - [Igalia’s contribution to the Mozilla project and Open Prioritization](http://frederic-wang.fr/igalia-contribution-to-mozilla-and-open-prioritization.html)
+  - [Unlocking Colors](https://bkardell.com/blog/Unlocking-Colors.html)
+
+  ### Why devs should pay
+  - [Picture element implementation in Blink](https://www.indiegogo.com/projects/picture-element-implementation-in-blink/)
+
+  ### JavaScript and other ideas
+  - [Compilers and programming languages](https://www.igalia.com/technology/compilers)
+  - [TC39](https://tc39.es/)
+
+  ### MathML and corporate support
+  - [MathML in Chromium](https://mathml.igalia.com/)
 ---
 
 ### Intro

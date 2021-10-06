@@ -6,40 +6,32 @@ hosts:
   - Bruce Lawson
   - Vadim Makeev
 chapters:
-  - title: 'Resilience in the time of COVID'
-    time: '00:57'
-    list:
-      - title: 'Looking at coronavirus.data.gov.uk'
-        link: https://dracos.co.uk/wrote/coronavirus-dashboard/
-      - title: 'Hammer and nails'
-        link: https://www.kryogenix.org/days/2020/05/06/hammer-and-nails/
-      - title: 'Web Sites as ‘Public Accommodation’ under a Pandemic'
-        link: https://adrianroselli.com/2020/04/web-sites-as-public-accommodation-under-a-pandemic.html
-      - title: 'Ensure your website is available and usable for everyone during COVID-19'
-        link: https://web.dev/covid19/
-  - title: 'HTML nesting rules'
-    time: '13:15'
-    list:
-      - title: 'HTML living standard'
-        link: https://html.spec.whatwg.org/multipage/
-      - title: 'Can I Include'
-        link: https://caninclude.glitch.me/
-  - title: 'Masonry layout'
-    time: '25:30'
-    list:
-      - title: 'Does masonry belong in the CSS Grid specification?'
-        link: https://rachelandrew.co.uk/archives/2020/05/05/does-masonry-belong-in-the-css-grid-specification
-      - title: 'Masonry layout proposal to CSSWG'
-        link: https://github.com/w3c/csswg-drafts/issues/4650
-      - title: 'Dev.Opera'
-        link: https://dev.opera.com/
-  - title: 'Web We Want'
-    time: '32:15'
-    list:
-      - title: 'The Web We Want survey results'
-        link: https://blog.stephaniestimac.com/posts/2020/05/web-we-want-2019-survey-results/
-tags: episode
-layout: episode.njk
+  - time: '00:57'
+    title: 'Resilience in the time of COVID'
+  - time: '13:15'
+    title: 'HTML nesting rules'
+  - time: '25:30'
+    title: 'Masonry layout'
+  - time: '32:15'
+    title: 'Web We Want'
+notes: |
+  ### Resilience in the time of COVID
+  - [Looking at coronavirus.data.gov.uk](https://dracos.co.uk/wrote/coronavirus-dashboard/)
+  - [Hammer and nails](https://www.kryogenix.org/days/2020/05/06/hammer-and-nails/)
+  - [Web Sites as ‘Public Accommodation’ under a Pandemic](https://adrianroselli.com/2020/04/web-sites-as-public-accommodation-under-a-pandemic.html)
+  - [Ensure your website is available and usable for everyone during COVID-19](https://web.dev/covid19/)
+
+  ### HTML nesting rules
+  - [HTML living standard](https://html.spec.whatwg.org/multipage/)
+  - [Can I Include](https://caninclude.glitch.me/)
+
+  ### Masonry layout
+  - [Does masonry belong in the CSS Grid specification?](https://rachelandrew.co.uk/archives/2020/05/05/does-masonry-belong-in-the-css-grid-specification)
+  - [Masonry layout proposal to CSSWG](https://github.com/w3c/csswg-drafts/issues/4650)
+  - [Dev.Opera](https://dev.opera.com/)
+
+  ### Web We Want
+  - [The Web We Want survey results](https://blog.stephaniestimac.com/posts/2020/05/web-we-want-2019-survey-results/)
 ---
 
 ### Intro

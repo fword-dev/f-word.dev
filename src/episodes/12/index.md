@@ -8,35 +8,26 @@ hosts:
 chapters:
   - time: '01:12'
     title: 'Theme-color and extensions in Safari 15'
-    list:
-      - title: 'Safari 15 Beta Release Notes'
-        link: https://developer.apple.com/documentation/safari-release-notes/safari-15-beta-release-notes
-      - title: 'WebKit Features in Safari at WWDC21'
-        link: https://webkit.org/blog/11700/webkit-features-in-safari-at-wwdc21/
-      - title: 'Design for Safari 15'
-        link: https://developer.apple.com/videos/play/wwdc2021/10029/
-      - title: 'Meet Safari Web Extensions on iOS'
-        link: https://developer.apple.com/videos/play/wwdc2021/10104/
-      - title: 'The web developer’s toolkit'
-        link: https://developer.apple.com/news/?id=kffgj3af
   - time: '14:24'
     title: 'Testing a11y in React Native app'
-    list:
-      - title: 'Facebook roadmap to improve a11y'
-        link: https://github.com/facebook/react-native/projects/15
-      - title: 'Random Expo.io tips'
-        link: https://brucelawson.co.uk/2021/random-expo-io-tips/
-      - title: 'React Native to web'
-        link: https://github.com/necolas/react-native-web/issues/1651
   - time: '24:40'
     title: 'You can :has pseudo class'
-    list:
-      - title: 'Can I :has()'
-        link: https://bkardell.com/blog/canihas.html
-      - title: 'Meet :has, A Native CSS Parent Selector'
-        link: https://www.smashingmagazine.com/2021/06/has-native-css-parent-selector/
-tags: episode
-layout: episode.njk
+notes: |
+  ### Theme-color and extensions in Safari 15
+  - [Safari 15 Beta Release Notes](https://developer.apple.com/documentation/safari-release-notes/safari-15-beta-release-notes)
+  - [WebKit Features in Safari at WWDC21](https://webkit.org/blog/11700/webkit-features-in-safari-at-wwdc21/)
+  - [Design for Safari 15](https://developer.apple.com/videos/play/wwdc2021/10029/)
+  - [Meet Safari Web Extensions on iOS](https://developer.apple.com/videos/play/wwdc2021/10104/)
+  - [The web developer’s toolkit](https://developer.apple.com/news/?id=kffgj3af)
+
+  ### Testing a11y in React Native app
+  - [Facebook roadmap to improve a11y](https://github.com/facebook/react-native/projects/15)
+  - [Random Expo.io tips](https://brucelawson.co.uk/2021/random-expo-io-tips/)
+  - [React Native to web](https://github.com/necolas/react-native-web/issues/1651)
+
+  ### You can :has pseudo class
+  - [Can I :has()](https://bkardell.com/blog/canihas.html)
+  - [Meet :has, A Native CSS Parent Selector](https://www.smashingmagazine.com/2021/06/has-native-css-parent-selector/)
 ---
 
 ## Intro
@@ -77,7 +68,7 @@ layout: episode.njk
 
 **Vadim:** But not just background color of a body element, but something that goes on top of your page. It might be header or some… Anything you have at the top, they’ll try to pick this color and fill the whole browser UI with this color so be careful, and definitely test your website. It might look ugly because of that.
 
-**Vadim:** Imagine if you have some blue color as the main theme, and you have some green line at the very top, the whole site might become green. But if you’d like to take control over this UI background fill, you can use standard theme color metal element with content attribute and some color value.
+**Vadim:** Imagine if you have some blue color as the main theme, and you have some green line at the very top, the whole site might become green. But if you’d like to take control over this UI background fill, you can use standard theme-color meta element with content attribute and some color value.
 
 **Vadim:** And also the added support for media attributes on this element. So you could switch your theme color based on a preferred color scheme, dark or light.
 

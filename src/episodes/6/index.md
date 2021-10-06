@@ -8,38 +8,30 @@ hosts:
 chapters:
   - time: '00:58'
     title: 'Mozilla layoffs'
-    list:
-      - title: 'Changing world, changing Mozilla'
-        link: https://blog.mozilla.org/blog/2020/08/11/changing-world-changing-mozilla/
-      - title: 'The cult of the free must die'
-        link: https://www.quirksmode.org/blog/archives/2020/08/the_cult_of_the.html
   - time: '11:38'
     title: 'Modals and focus'
-    list:
-      - title: 'Modal by Filament Group'
-        link: https://filamentgroup.github.io/fg-modal/demo/
-      - title: 'Modal from WAI-ARIA Authoring Practices'
-        link: https://w3c.github.io/aria-practices/examples/dialog-modal/dialog.html
-      - title: 'Having an open dialog'
-        link: https://www.scottohara.me/blog/2019/03/05/open-dialog.html
   - time: '20:34'
     title: 'AVIF image format'
-    list:
-      - title: 'The new next-gen image compression format'
-        link: https://reachlightspeed.com/blog/using-the-new-high-performance-avif-image-format-on-the-web-today/
-      - title: 'AVIF support in Chrome 85'
-        link: https://developers.google.com/web/updates/2020/08/nic85#more
-      - title: 'Squoosh with AVIF support'
-        link: https://squoosh.app/
   - time: '29:14'
     title: 'AdBlock Plus lawsuit'
-    list:
-      - title: 'Inside Axel Springer’s war with AdBlock Plus'
-        link: https://digiday.com/media/inside-axel-springers-war-adblock-plus/
-      - title: 'Ad Blocker Developer Summit'
-        link: https://adblockerdevsummit.com/
-tags: episode
-layout: episode.njk
+notes: |
+  ### Mozilla layoffs
+  - [Changing world, changing Mozilla](https://blog.mozilla.org/blog/2020/08/11/changing-world-changing-mozilla/)
+  - [The cult of the free must die](https://www.quirksmode.org/blog/archives/2020/08/the_cult_of_the.html)
+
+  ### Modals and focus
+  - [Modal by Filament Group](https://filamentgroup.github.io/fg-modal/demo/)
+  - [Modal from WAI-ARIA Authoring Practices](https://w3c.github.io/aria-practices/examples/dialog-modal/dialog.html)
+  - [Having an open dialog](https://www.scottohara.me/blog/2019/03/05/open-dialog.html)
+
+  ### AVIF image format
+  - [The new next-gen image compression format](https://reachlightspeed.com/blog/using-the-new-high-performance-avif-image-format-on-the-web-today/)
+  - [AVIF support in Chrome 85](https://developers.google.com/web/updates/2020/08/nic85#more)
+  - [Squoosh with AVIF support](https://squoosh.app/)
+
+  ### AdBlock Plus lawsuit
+  - [Inside Axel Springer’s war with AdBlock Plus](https://digiday.com/media/inside-axel-springers-war-adblock-plus/)
+  - [Ad Blocker Developer Summit](https://adblockerdevsummit.com/)
 ---
 
 ### Intro

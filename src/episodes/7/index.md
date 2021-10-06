@@ -8,29 +8,23 @@ hosts:
 chapters:
   - time: '00:34'
     title: 'We’re back'
-    list:
-      - title: 'YaTalks 2020'
-        link: https://yatalks.yandex.ru/
   - time: '03:41'
     title: 'Chrome 88 beta'
-    list:
-      - title: 'Chrome 88 beta release notes'
-        link: https://blog.chromium.org/2020/12/chrome-88-digital-goods-lighting.html
-      - title: 'Declarative Shadow DOM at Web.Dev'
-        link: https://web.dev/declarative-shadow-dom/
-      - title: 'Vadim’s Declarative Shadow DOM demo'
-        link: https://pepelsbey.github.io/playground/38/
   - time: '17:36'
     title: 'The grand unification'
-    list:
-      - title: 'The Grand Unification Proposal (CSSWG)'
-        link: https://github.com/w3c/csswg-drafts/issues/5743
-      - title: 'The Grand Unification of Web Technologies (full version)'
-        link: https://docs.google.com/document/d/1Ys-2Pb6PUVl8-5BMhM770trKNp_DmGrfskDlp-L_WSs/view
-      - title: 'Why it’s good for users that HTML, CSS and JS are separate languages'
-        link: https://hiddedevries.nl/en/blog/2020-11-25-why-its-good-for-users-that-html-css-and-js-are-separate-languages/
-tags: episode
-layout: episode.njk
+notes: |
+  ### We’re back
+  - [YaTalks 2020](https://yatalks.yandex.ru/)
+
+  ### Chrome 88 beta
+  - [Chrome 88 beta release notes](https://blog.chromium.org/2020/12/chrome-88-digital-goods-lighting.html)
+  - [Declarative Shadow DOM at Web.Dev](https://web.dev/declarative-shadow-dom/)
+  - [Vadim’s Declarative Shadow DOM demo](https://pepelsbey.github.io/playground/38/)
+
+  ### The grand unification
+  - [The Grand Unification Proposal (CSSWG)](https://github.com/w3c/csswg-drafts/issues/5743)
+  - [The Grand Unification of Web Technologies (full version)](https://docs.google.com/document/d/1Ys-2Pb6PUVl8-5BMhM770trKNp_DmGrfskDlp-L_WSs/view)
+  - [Why it’s good for users that HTML, CSS and JS are separate languages](https://hiddedevries.nl/en/blog/2020-11-25-why-its-good-for-users-that-html-css-and-js-are-separate-languages/)
 ---
 
 ### Intro

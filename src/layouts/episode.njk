@@ -42,16 +42,7 @@ layout: page.njk
         aria-labelledby="show-notes-tab"
         id="show-notes-panel">
         <h2 class="visually-hidden">Show Notes</h2>
-        {%- for chapter in chapters -%}
-            <h3>{{ chapter.title }}</h3>
-            <ul>
-            {%- for item in chapter.list -%}
-                <li>
-                    <a href="{{ item.link }}">{{ item.title }}</a>
-                </li>
-            {%- endfor -%}
-            </ul>
-        {%- endfor -%}
+        {{ notes | markdown | safe }}
     </section>
     <section class="content" role="tabpanel" tabindex="0"
         aria-labelledby="transcript-tab"

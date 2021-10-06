@@ -1,6 +1,6 @@
 const fs = require('fs');
 const htmlmin = require('html-minifier');
-const markdownIt = require('markdown-it');
+const markdown = require('markdown-it')({ html: true });
 const markdownItNamedHeadings = require('markdown-it-named-headings');
 const music = require('music-metadata');
 const prettydata = require('pretty-data');
@@ -67,11 +67,15 @@ module.exports = (config) => {
         return content;
     });
 
-    // Markdown Options
+    // Markdown
 
-    config.setLibrary('md', markdownIt({
-        html: true
-    }).use(markdownItNamedHeadings));
+    config.setLibrary(
+        'md', markdown.use(markdownItNamedHeadings)
+    );
+
+    config.addFilter('markdown', (value) => {
+        return markdown.render(value);
+    });
 
     // Passthrough Copy
 

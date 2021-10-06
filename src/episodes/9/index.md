@@ -8,27 +8,22 @@ hosts:
 chapters:
   - time: '01:01'
     title: 'Safari extensions model'
-    list:
-      - title: 'Safari 14 added WebExtensions support. So where are the extensions?'
-        link: 'https://sixcolors.com/post/2021/01/safari-14-added-webextensions-support-so-where-are-the-extensions/'
-      - title: 'Submitting and Distributing a Safari App Extension'
-        link: 'https://blog.tomayac.com/2020/11/09/submitting-and-distributing-a-safari-app-extension/'
   - time: '12:37'
     title: 'Cascading layers of CSS'
-    list:
-      - title: 'Cascade Layers, a Proposal'
-        link: 'https://gist.github.com/mirisuzanne/4224caca74a0d4be33a2b565df34b9e7'
-      - title: 'CSS Cascading and Inheritance Level 5'
-        link: 'https://www.w3.org/TR/css-cascade-5/#at-ruledef-layer'
   - time: '20:07'
     title: 'What’s new in WCAG 3'
-    list:
-      - title: 'WCAG 3 Introduction'
-        link: 'https://www.w3.org/WAI/standards-guidelines/wcag/wcag3-intro/'
-      - title: 'W3C Accessibility Guidelines (WCAG) 3.0'
-        link: 'https://www.w3.org/TR/wcag-3.0/'
-tags: episode
-layout: episode.njk
+notes: |
+  ### Safari extensions model
+  - [Safari 14 added WebExtensions support. So where are the extensions?](https://sixcolors.com/post/2021/01/safari-14-added-webextensions-support-so-where-are-the-extensions/)
+  - [Submitting and Distributing a Safari App Extension](https://blog.tomayac.com/2020/11/09/submitting-and-distributing-a-safari-app-extension/)
+
+  ### Cascading layers of CSS
+  - [Cascade Layers, a Proposal](https://gist.github.com/mirisuzanne/4224caca74a0d4be33a2b565df34b9e7)
+  - [CSS Cascading and Inheritance Level 5](https://www.w3.org/TR/css-cascade-5/#at-ruledef-layer)
+
+  ### What’s new in WCAG 3
+  - [WCAG 3 Introduction](https://www.w3.org/WAI/standards-guidelines/wcag/wcag3-intro/)
+  - [W3C Accessibility Guidelines (WCAG) 3.0](https://www.w3.org/TR/wcag-3.0/)
 ---
 
 ### Intro
