@@ -34,7 +34,7 @@ notes: |
 
 ### Intro
 
-**Bruce:** Hello and welcome to episode eight of The F-word. The F-word, of course, stands for “front-end”: browsers, web standards, the politics and economics of the web, and all things in between. I’m Bruce Lawson, coming to you from Birmingham in the UK. My usual co-host, Vadim Makeev, couldn’t make it today. He’s at some secret palace on the Black Sea installing Internet Explorer on all the computers. So I’m here today with a special guest, James Rosewell.
+**Bruce:** Hello and welcome to episode eight of The F-word. The F-word, of course, stands for frontend: browsers, web standards, the politics and economics of the web, and all things in between. I’m Bruce Lawson, coming to you from Birmingham in the UK. My usual co-host, Vadim Makeev, couldn’t make it today. He’s at some secret palace on the Black Sea installing Internet Explorer on all the computers. So I’m here today with a special guest, James Rosewell.
 
 ### Browser detection
 

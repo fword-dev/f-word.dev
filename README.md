@@ -1,6 +1,6 @@
 # The F-Word
 
-Front-end podcast by Bruce Lawson and Vadim Makeev.
+Frontend podcast by Bruce Lawson and Vadim Makeev.
 
 ## Development
 

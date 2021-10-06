@@ -38,7 +38,7 @@ notes: |
 
 **Vadim:** Hello, welcome to the F-Word.
 
-**Bruce:** The F-Word, of course, stands for “front-end,” the wonderful and wacky wild and crazy world of browsers, web standards, the internet, and everything related to it. I’m Bruce Lawson coming to you from Birmingham, United Kingdom.
+**Bruce:** The F-Word, of course, stands for frontend the wonderful and wacky wild and crazy world of browsers, web standards, the internet, and everything related to it. I’m Bruce Lawson coming to you from Birmingham, United Kingdom.
 
 **Vadim:** I’m Vadim Makeev from Saint Petersburg, Russia. It’s not just two of us here today, we also have a guest, Eric Meyer.
 

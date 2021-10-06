@@ -39,7 +39,7 @@ notes: |
 
 **Bruce:** Hello, and welcome to The F-Word.
 
-**Vadim:** And The F-Word of course stands for Front-end, the wonderful world of web development.
+**Vadim:** And The F-Word of course stands for frontend, the wonderful world of web development.
 
 **Bruce:** I’m Bruce Lawson coming to you from Birmingham in the United Kingdom.
 

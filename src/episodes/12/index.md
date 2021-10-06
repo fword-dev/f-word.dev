@@ -32,7 +32,7 @@ notes: |
 
 ## Intro
 
-**Bruce:** Hello, and welcome to The F-Word. The F-Word of course stands for front end. The marvelous, a magical, mysterious cosmos of browsers, web standards and everything in between. I’m Bruce Lawson. And I am speaking to you from sunny Birmingham in the blue skied United Kingdom,
+**Bruce:** Hello, and welcome to The F-Word. The F-Word of course stands for frontend. The marvelous, a magical, mysterious cosmos of browsers, web standards and everything in between. I’m Bruce Lawson. And I am speaking to you from sunny Birmingham in the blue skied United Kingdom,
 
 **Vadim:** I’m Vadim Makeev, coming to you from St. Petersburg, Russia. It’s summer and it’s +23°C here as well. And I’m shocked.
 
@@ -334,6 +334,6 @@ notes: |
 
 **Vadim:** Yeah. I had a chance to meet him in person in California many years ago while working for Opera, and then discussing some web extensions and the PWAs back in the days when they just introduced the thing.
 
-**Vadim:** He seemed like a really nice guy. And I was really enjoying his rants about performance the last couple of years, trying to explain to front-end developers why browser diversity’s important and why Apple is hurting the web by not allowing alternative browser engines on iOS. I hope he’ll keep doing this in some other place, in some other role, but I think we still need a person like him.
+**Vadim:** He seemed like a really nice guy. And I was really enjoying his rants about performance the last couple of years, trying to explain to frontend developers why browser diversity’s important and why Apple is hurting the web by not allowing alternative browser engines on iOS. I hope he’ll keep doing this in some other place, in some other role, but I think we still need a person like him.
 
 **Bruce:** We do. And I have no idea what Big Al is doing next, but I can’t believe he’s stepping back from the web. So I look forward to his next incarnation. Just as an FYI, Vadim, your English is brilliant, but you keep using the word rant and what you actually mean is measured discussion. I just think you’re reading the wrong dictionary here, mate. So on this sad note of saying goodbye to Big Al and this appallingly rude correction of Vadim’s English, we bid you farewell from The F-Word episode 12. Stay cool and groovy wherever you are. Goodbye. Toodles.

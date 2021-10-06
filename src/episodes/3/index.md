@@ -38,7 +38,7 @@ notes: |
 
 **Bruce Lawson:** Hello and welcome to the F-Word.
 
-**Vadim Makeev:** The F-Word of course, stands for front end, the wonderful world of web development. I’m Vadim Makeev.
+**Vadim Makeev:** The F-Word of course, stands for frontend, the wonderful world of web development. I’m Vadim Makeev.
 
 **Bruce Lawson:** And I’m Bruce Lawson, coming to you from Birmingham, UK. Where are you these days Vadim?
 

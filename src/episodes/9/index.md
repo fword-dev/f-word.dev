@@ -30,7 +30,7 @@ notes: |
 
 **Bruce:** Hello, and welcome to the F-Word.
 
-**Vadim:** The F-Word of course stands for Front-end. The wonderful world of web development.
+**Vadim:** The F-Word of course stands for frontend. The wonderful world of web development.
 
 **Bruce:** Browsers, web standards, and everything in between.
 

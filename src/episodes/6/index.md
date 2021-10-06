@@ -38,7 +38,7 @@ notes: |
 
 **Vadim:** Hello and welcome to The F Word.
 
-**Bruce:** The F Word of course stands for front end, the wonderful world of web development and web standards, browsers, browser politics and everything in between.
+**Bruce:** The F Word of course stands for frontend, the wonderful world of web development and web standards, browsers, browser politics and everything in between.
 
 **Vadim:** I’m Vadim Makeev, coming to you from St. Petersburg, Russia.
 

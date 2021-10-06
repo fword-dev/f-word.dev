@@ -39,7 +39,7 @@ notes: |
 
 **Bruce:** Hello and welcome to The F-word.
 
-**Vadim:** The F-Word of course stands for front-end the wonderful world of web development, browsers standards, some politics and everything in between.
+**Vadim:** The F-Word of course stands for frontend the wonderful world of web development, browsers standards, some politics and everything in between.
 
 **Bruce:** I’m Bruce Lawson, coming to you from Birmingham in the United Kingdom.
 
@@ -67,7 +67,7 @@ notes: |
 
 **Bruce:** So the Sass core team, Vadim, you’re big into Sass, aren’t you?
 
-**Vadim:** Well, I used to be. Let me tell you a story. I think exactly 10 years ago, it’s a conference in Moscow. I’m sitting in the first row and at the stage is Andrey Sitnik. Miriam, you probably know this guy, he’s author of PostCSS and Andrey on the stage, selling the audience Sass as a new hope for front-end and super, super new cool automation tool that will make your life easier. I’m sitting in the first row opposing him, telling him, “We don’t need it. We have everything we need,” and blah, blah, blah. Two years later, I’m developing website, Dev.Opera using Sass only, mixings includes everything. It was terrible code, to be honest, I used every possible function available in Sass, including Susy library for layout. That was super cool, before Flexbox was a widely available I was using those isolated floats. That was something. I just recently realized that Susy and this library and Miriam Suzanne have something in common. So tell us your Sass story, Miriam.
+**Vadim:** Well, I used to be. Let me tell you a story. I think exactly 10 years ago, it’s a conference in Moscow. I’m sitting in the first row and at the stage is Andrey Sitnik. Miriam, you probably know this guy, he’s author of PostCSS and Andrey on the stage, selling the audience Sass as a new hope for frontend and super, super new cool automation tool that will make your life easier. I’m sitting in the first row opposing him, telling him, “We don’t need it. We have everything we need,” and blah, blah, blah. Two years later, I’m developing website, Dev.Opera using Sass only, mixings includes everything. It was terrible code, to be honest, I used every possible function available in Sass, including Susy library for layout. That was super cool, before Flexbox was a widely available I was using those isolated floats. That was something. I just recently realized that Susy and this library and Miriam Suzanne have something in common. So tell us your Sass story, Miriam.
 
 **Miriam:** So I started freelancing. I was freelancing a little bit and I was using the layout technique. This was before media queries had really become available widely. I saw the recorded video of a talk by Natalie Downe called CSS Systems. It’s still one of my historically favorite talks that I’ve seen. She just laid out this model for responsive sites. They were responsive both to the viewport and to font sizes, but they had a max width so they weren’t a real long line lengths, just beautiful sites that she was building with the team at Clearleft. This was 2008, something.
 
