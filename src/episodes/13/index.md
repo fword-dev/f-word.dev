@@ -14,7 +14,7 @@ chapters:
   - time: '24:51'
     title: 'What Apple’s doing?'
   - time: '33:06'
-    title: 'Developers are dissapointed'
+    title: 'Developers are disappointed'
   - time: '38:56'
     title: 'Next steps and possible future'
 notes: |
