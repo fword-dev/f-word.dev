@@ -26,7 +26,7 @@ permalink: feed/index.xml
         <itunes:category text="{{ data.subcategory }}"/>
     </itunes:category>
 
-{%- for episode in collections.episode -%}
+{%- for episode in collections.episode | reverse -%}
 
     {% set description %}
         <ul>
@@ -40,16 +40,7 @@ permalink: feed/index.xml
             <li>{{ host }}</li>
             {%- endfor -%}
         </ul>
-        {%- for chapter in episode.data.chapters -%}
-            <h2>{{ chapter.title }}</h2>
-            <ul>
-            {%- for item in chapter.list -%}
-                <li>
-                    <a href="{{ item.link }}">{{ item.title }}</a>
-                </li>
-            {%- endfor -%}
-            </ul>
-        {%- endfor -%}
+        {{ episode.data.notes | markdown | safe }}
     {% endset %}
 
     {% set fileUrl %}
