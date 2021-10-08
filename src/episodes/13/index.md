@@ -160,7 +160,7 @@ notes: |
 
 **Stuart:** I would rather that people got to put apps on this platform, even if those apps are web browsers with their own rendering engines in. Because, to me, it feels flagrantly anti-competitive to say, “You don’t get to do a web browser.” But, I don’t get to decide on whether things are acting competitive or not, but the Competition and Marketing Authority do, and they also have my opinion.
 
-**Bruce:** Yeah, and I have to say, although, when they invited us to speak, we asked them, “What can we say about this procedure?” And they said well, the talks that Stuart and I and Clark gave, obviously, we can make those public. And Stuart and I have. They did ask us not to, sort of, name the people in the room, or go too deeply into the questions we were asked and-
+**Bruce:** Yeah, and I have to say, although, when they invited us to speak, we asked them, “What can we say about this procedure?” And they said well, the talks that Stuart and I and “Clark” gave, obviously, we can make those public. And Stuart and I have. They did ask us not to, sort of, name the people in the room, or go too deeply into the questions we were asked and-
 
 **Stuart:** Which is perfectly fair.
 
@@ -280,7 +280,7 @@ notes: |
 
 **Stuart:** Well, yeah. I mean, they pay a hysterical amount of money to keep it that way. But yeah, I mean, that’s a whole different discussion. Because it would be nice if DuckDuckGo were, but DuckDuckGo would say “we don’t have the money to pay for it, because we’re not the biggest search engine in the world”. But then, you get into a whole big discussion about people who have the money get to make the rules. Which is more than the F-Word is designed to cope with, I think.
 
-**Bruce:** Well, oddly enough though, we do get a surprising amount of that on the F-Word. But to answer Vadim’s question more near term. They began this investigation in March this year, and it will conclude in March next year. And they’re going to release an interim report in December. But that won’t be their final report. And we, Stuart and I, and Clark Kent have offered a… we have said, “If you want us back, or you want to ask us anymore questions, we’re happy to.” But they haven’t as yet. But then, you heard how much Stuart and I can speak. They’re probably still… they probably still got tinnitus from meeting us in early September.
+**Bruce:** Well, oddly enough though, we do get a surprising amount of that on the F-Word. But to answer Vadim’s question more near term. They began this investigation in March this year, and it will conclude in March next year. And they’re going to release an interim report in December. But that won’t be their final report. And we, Stuart and I, and “Clark Kent” have offered a… we have said, “If you want us back, or you want to ask us anymore questions, we’re happy to.” But they haven’t as yet. But then, you heard how much Stuart and I can speak. They’re probably still… they probably still got tinnitus from meeting us in early September.
 
 **Bruce:** But yeah. And I don’t believe that they can say, “Apple, you must do this, or we will come round and tell you off.” What they can do is say, “If you continue behaving like this, you don’t have the right to sell your stuff in the UK.” And given the UK is probably the second biggest market for iPhones, I don’t know, but certainly, the UK, I think, would be a big enough iOS market. Not… if you were Lichtenstein, or Lesotho saying, “Apple you can’t sell here.” Apple will go, “Okay. Well, we sell two a year, so what-evs.”
 
