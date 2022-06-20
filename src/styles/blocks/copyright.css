@@ -15,7 +15,7 @@
     color: inherit;
 }
 
-.copyright__link:focus {
+.copyright__link:focus-visible {
     outline: 3px solid var(--special-blue);
     outline-offset: 2px;
 }

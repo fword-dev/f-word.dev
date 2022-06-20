@@ -32,7 +32,7 @@
     background-color: var(--basic-extra-dark);
 }
 
-.tabs__tab:focus {
+.tabs__tab:focus-visible {
     outline: 3px solid var(--special-blue);
     outline-offset: -3px;
 }

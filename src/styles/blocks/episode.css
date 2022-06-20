@@ -31,7 +31,7 @@
     border-radius: 100px;
 }
 
-.episode__audio:focus {
+.episode__audio:focus-visible {
     outline: 3px solid var(--special-blue);
     outline-offset: 2px;
 }

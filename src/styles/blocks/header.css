@@ -9,7 +9,7 @@
 
 /* Link */
 
-.header__link:focus {
+.header__link:focus-visible {
     outline: 3px solid var(--special-blue);
     outline-offset: -3px;
 }

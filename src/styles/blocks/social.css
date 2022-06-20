@@ -16,7 +16,7 @@
     color: var(--special-blue);
 }
 
-.social__link:focus {
+.social__link:focus-visible {
     outline: 3px solid var(--special-blue);
     outline-offset: 2px;
 }

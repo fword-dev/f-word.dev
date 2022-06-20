@@ -5,7 +5,7 @@
     hyphens: auto;
 }
 
-.content:focus {
+.content:focus-visible {
     outline: none;
 }
 
@@ -80,7 +80,7 @@
     color: var(--special-pink);
 }
 
-.content a:focus {
+.content a:focus-visible {
     display: inline-block;
     outline: 3px solid var(--special-blue);
     outline-offset: 2px;

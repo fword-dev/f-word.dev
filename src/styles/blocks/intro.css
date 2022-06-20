@@ -20,7 +20,7 @@
     color: inherit;
 }
 
-.intro__tagline-link:focus {
+.intro__tagline-link:focus-visible {
     outline: 3px solid var(--special-blue);
     outline-offset: 2px;
     box-decoration-break: ;
@@ -46,7 +46,7 @@
     transform: scale(1.2);
 }
 
-.intro__services-link:focus {
+.intro__services-link:focus-visible {
     outline: 3px solid var(--special-blue);
     outline-offset: 1px;
 }
