@@ -23,7 +23,6 @@
 .intro__tagline-link:focus-visible {
     outline: 3px solid var(--special-blue);
     outline-offset: 2px;
-    box-decoration-break: ;
 }
 
 /* Services */
