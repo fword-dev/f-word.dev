@@ -3,6 +3,8 @@ const fs = require('fs');
 const gulp = require('gulp');
 const paths = require('vinyl-paths');
 const postcss = require('gulp-postcss');
+const postcssImport = require('postcss-import');
+const postcssCsso = require('postcss-csso');
 const replace = require('gulp-replace');
 const rev = require('gulp-rev');
 const revRewrite = require('gulp-rev-rewrite');
@@ -15,8 +17,8 @@ const rollupTerser = require('@rollup/plugin-terser');
 const buildStyles = () => {
     return gulp.src('dist/styles/index.css')
         .pipe(postcss([
-            require('postcss-import'),
-            require('postcss-csso'),
+            postcssImport,
+            postcssCsso,
         ]))
         .pipe(replace(/\.\.\//g, ''))
         .pipe(gulp.dest('dist'));
