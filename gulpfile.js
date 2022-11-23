@@ -1,5 +1,3 @@
-const babel = require('gulp-babel');
-const buffer = require('vinyl-buffer');
 const del = require('del');
 const fs = require('fs');
 const gulp = require('gulp');
@@ -8,9 +6,9 @@ const postcss = require('gulp-postcss');
 const replace = require('gulp-replace');
 const rev = require('gulp-rev');
 const revRewrite = require('gulp-rev-rewrite');
-const rollup = require('rollup-stream');
-const source = require('vinyl-source-stream');
-const terser = require('gulp-terser');
+const rollup = require('rollup');
+const rollupBabel = require('@rollup/plugin-babel');
+const rollupTerser = require('@rollup/plugin-terser');
 
 // Styles
 
@@ -27,18 +25,25 @@ const buildStyles = () => {
 // Scripts
 
 const buildScripts = () => {
-    return rollup({
-        input: 'src/scripts/index.js',
-        format: 'es',
-    })
-    .pipe(source('index.js'))
-    .pipe(buffer())
-    .pipe(babel({
-        presets: ['@babel/preset-env']
-    }))
-    .pipe(terser())
-    .pipe(gulp.dest('dist'));
+    return rollup
+        .rollup({
+            input: './src/scripts/index.js',
+            plugins: [
+                rollupBabel({
+                    babelHelpers: 'bundled',
+                }),
+                rollupTerser(),
+            ],
+        })
+        .then(bundle => {
+            return bundle.write({
+                file: './dist/index.js',
+                format: 'umd',
+                name: 'library',
+            });
+        });
 };
+
 
 // Paths
 
