@@ -1,35 +1,3 @@
----
-number: 12
-title: 'Theme-color and extensions in Safari 15, testing a11y in React Native, :has pseudo class'
-date: 2021-06-25
-hosts:
-  - Bruce Lawson
-  - Vadim Makeev
-chapters:
-  - time: '01:12'
-    title: 'Theme-color and extensions in Safari 15'
-  - time: '14:24'
-    title: 'Testing a11y in React Native app'
-  - time: '24:40'
-    title: 'You can :has pseudo class'
-notes: |
-  ### Theme-color and extensions in Safari 15
-  - [Safari 15 Beta Release Notes](https://developer.apple.com/documentation/safari-release-notes/safari-15-beta-release-notes)
-  - [WebKit Features in Safari at WWDC21](https://webkit.org/blog/11700/webkit-features-in-safari-at-wwdc21/)
-  - [Design for Safari 15](https://developer.apple.com/videos/play/wwdc2021/10029/)
-  - [Meet Safari Web Extensions on iOS](https://developer.apple.com/videos/play/wwdc2021/10104/)
-  - [The web developer’s toolkit](https://developer.apple.com/news/?id=kffgj3af)
-
-  ### Testing a11y in React Native app
-  - [Facebook roadmap to improve a11y](https://github.com/facebook/react-native/projects/15)
-  - [Random Expo.io tips](https://brucelawson.co.uk/2021/random-expo-io-tips/)
-  - [React Native to web](https://github.com/necolas/react-native-web/issues/1651)
-
-  ### You can :has pseudo class
-  - [Can I :has()](https://bkardell.com/blog/canihas.html)
-  - [Meet :has, A Native CSS Parent Selector](https://www.smashingmagazine.com/2021/06/has-native-css-parent-selector/)
----
-
 ## Intro
 
 **Bruce:** Hello, and welcome to The F-Word. The F-Word of course stands for frontend. The marvelous, a magical, mysterious cosmos of browsers, web standards and everything in between. I’m Bruce Lawson. And I am speaking to you from sunny Birmingham in the blue skied United Kingdom,

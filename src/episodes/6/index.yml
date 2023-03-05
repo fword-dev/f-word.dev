@@ -1,0 +1,33 @@
+number: 6
+title: 'Mozilla layoffs, modals and focus, AVIF, AdBlock Plus lawsuit'
+date: 2020-09-11
+hosts:
+  - Bruce Lawson
+  - Vadim Makeev
+chapters:
+  - time: '00:58'
+    title: 'Mozilla layoffs'
+  - time: '11:38'
+    title: 'Modals and focus'
+  - time: '20:34'
+    title: 'AVIF image format'
+  - time: '29:14'
+    title: 'AdBlock Plus lawsuit'
+notes: |
+  ### Mozilla layoffs
+  - [Changing world, changing Mozilla](https://blog.mozilla.org/blog/2020/08/11/changing-world-changing-mozilla/)
+  - [The cult of the free must die](https://www.quirksmode.org/blog/archives/2020/08/the_cult_of_the.html)
+
+  ### Modals and focus
+  - [Modal by Filament Group](https://filamentgroup.github.io/fg-modal/demo/)
+  - [Modal from WAI-ARIA Authoring Practices](https://w3c.github.io/aria-practices/examples/dialog-modal/dialog.html)
+  - [Having an open dialog](https://www.scottohara.me/blog/2019/03/05/open-dialog.html)
+
+  ### AVIF image format
+  - [The new next-gen image compression format](https://reachlightspeed.com/blog/using-the-new-high-performance-avif-image-format-on-the-web-today/)
+  - [AVIF support in Chrome 85](https://developers.google.com/web/updates/2020/08/nic85#more)
+  - [Squoosh with AVIF support](https://squoosh.app/)
+
+  ### AdBlock Plus lawsuit
+  - [Inside Axel Springer’s war with AdBlock Plus](https://digiday.com/media/inside-axel-springers-war-adblock-plus/)
+  - [Ad Blocker Developer Summit](https://adblockerdevsummit.com/)

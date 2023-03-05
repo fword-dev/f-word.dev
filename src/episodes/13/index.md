@@ -1,31 +1,3 @@
----
-number: 13
-title: 'Does the iOS browser ban harm or help the web?'
-date: 2021-10-07
-hosts:
-  - Bruce Lawson
-  - Vadim Makeev
-  - Stuart Langridge
-chapters:
-  - time: '00:44'
-    title: 'Browser choice on iOS'
-  - time: '15:50'
-    title: 'Why should we care?'
-  - time: '24:51'
-    title: 'What Apple’s doing?'
-  - time: '33:06'
-    title: 'Developers are disappointed'
-  - time: '38:56'
-    title: 'Next steps and possible future'
-notes: |
-  ### Links
-  - [Talking to the Competition and Markets Authority about Apple](https://www.kryogenix.org/days/2021/09/06/talking-to-the-competition-and-markets-authority-about-apple/)
-  - [Browser choice on Apple’s iOS: privacy and security aspects](https://kryogenix.org/code/cma-apple/)
-  - [Set Safari free!](https://brucelawson.co.uk/2021/set-safari-free/)
-  - [Briefing to the UK CMA on Apple’s iOS browser monopoly and PWA](https://brucelawson.co.uk/2021/briefing-to-the-uk-competition-and-markets-authority-on-apples-ios-browser-monopoly-and-progressive-web-apps/)
-  - [iOS Engine Choice In Depth by Alex Russel](https://infrequently.org/2021/08/webkit-ios-deep-dive/)
----
-
 ### Intro
 
 **Bruce:** Hello, and welcome to the F-Word.
