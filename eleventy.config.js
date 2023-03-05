@@ -4,6 +4,7 @@ const markdown = require('markdown-it')({ html: true });
 const markdownItNamedHeadings = require('markdown-it-named-headings');
 const music = require('music-metadata');
 const prettydata = require('pretty-data');
+const yaml = require('js-yaml');
 
 module.exports = (config) => {
     // Audio Data Filters
@@ -76,6 +77,12 @@ module.exports = (config) => {
     config.addFilter('markdown', (value) => {
         return markdown.render(value);
     });
+
+	// YAML
+
+	config.addDataExtension('yml', (contents) => {
+		return yaml.load(contents);
+	});
 
     // Passthrough Copy
 

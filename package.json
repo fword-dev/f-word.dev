@@ -29,6 +29,7 @@
     "gulp-rev": "9.0.0",
     "gulp-rev-rewrite": "^5.0.0",
     "html-minifier": "^4.0.0",
+    "js-yaml": "^4.1.0",
     "markdown-it-named-headings": "^1.1.0",
     "music-metadata": "7.12.3",
     "postcss": "^8.3.9",
