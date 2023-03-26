@@ -1,0 +1,24 @@
+number: 15
+title: 'Origins of Apple browser ban and hope for changes'
+date: 2023-04-04
+hosts:
+  - Bruce Lawson
+  - Vadim Makeev
+  - Alex Russell
+chapters:
+  - time: '01:52'
+    title: 'Origins or Apple browser ban'
+  - time: '11:04'
+    title: 'The reasons behind the ban'
+  - time: '24:04'
+    title: 'Browser engines preparations'
+  - time: '31:38'
+    title: 'Possibility of malicious compliance'
+notes: |
+  ### Links
+  - [Alex Russell on Mastodon](https://toot.cafe/@slightlyoff)
+  - [Alex Russell on Twitter](https://twitter.com/slightlylate)
+  - [Checking out and building Chromium for iOS](https://chromium.googlesource.com/chromium/src/+/main/docs/ios/build_instructions.md)
+  - [Safari 16.4 Is An Admission](https://infrequently.org/2023/02/safari-16-4-is-an-admission/)
+  - [Browser Choice Must Matter](https://infrequently.org/series/browser-choice-must-matter/)
+  - [Rectums in Apple Healthkit](https://developer.apple.com/documentation/healthkit/hkbodytemperaturesensorlocation/rectum/)
