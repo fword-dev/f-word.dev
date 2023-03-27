@@ -5,7 +5,7 @@
     "code": "editorconfig-checker",
     "html": "node-w3c-validator -f lint -evH -i dist/**/*.html",
     "build": "rm -rf dist && eleventy && gulp",
-    "deploy": "cd dist && rsync --archive --compress --delete --exclude=.DS_Store . f-word.dev:/var/www/f-word.dev/html/"
+    "deploy": "cd dist && rsync --progress --archive --compress --delete --exclude=.DS_Store . f-word.dev:/var/www/f-word.dev/html/"
   },
   "engines": {
     "node": "16",
