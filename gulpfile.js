@@ -1,13 +1,9 @@
 const del = require('del');
-const fs = require('fs');
 const gulp = require('gulp');
-const paths = require('vinyl-paths');
 const postcss = require('gulp-postcss');
 const postcssImport = require('postcss-import');
 const postcssCsso = require('postcss-csso');
 const replace = require('gulp-replace');
-const rev = require('gulp-rev');
-const revRewrite = require('gulp-rev-rewrite');
 const rollup = require('rollup');
 const rollupBabel = require('@rollup/plugin-babel');
 const rollupTerser = require('@rollup/plugin-terser');
@@ -60,40 +56,6 @@ const replacePaths = () => {
         .pipe(gulp.dest('dist'));
 };
 
-// Cache
-
-const cacheRevision = () => {
-    return gulp.src([
-            'dist/**/*.{css,js,svg,png,woff2}',
-            '!dist/images/cover.png',
-            'dist/manifest.json',
-        ], {
-            base: 'dist'
-        })
-        .pipe(paths(del))
-        .pipe(rev())
-        .pipe(gulp.dest('dist'))
-        .pipe(rev.manifest('rev.json'))
-        .pipe(gulp.dest('dist'));
-};
-
-const cacheRewrite = () => {
-    const manifest = fs.readFileSync('dist/rev.json');
-    return gulp.src([
-            'dist/**/*.{html,css}',
-            'dist/manifest-*.json',
-        ])
-        .pipe(revRewrite({
-            manifest
-        }))
-        .pipe(gulp.dest('dist'));
-};
-
-const cacheFiles = gulp.series(
-    cacheRevision,
-    cacheRewrite,
-);
-
 // Clean
 
 const cleanFiles = () => {
@@ -110,6 +72,5 @@ exports.default = gulp.series(
     buildStyles,
     buildScripts,
     replacePaths,
-    cacheFiles,
     cleanFiles,
 );

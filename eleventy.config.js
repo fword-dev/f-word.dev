@@ -86,12 +86,16 @@ module.exports = (config) => {
 
     // Passthrough Copy
 
-    config.addPassthroughCopy('src/fonts');
-    config.addPassthroughCopy('src/images');
-    config.addPassthroughCopy('src/styles');
-    config.addPassthroughCopy('src/scripts');
-    config.addPassthroughCopy('src/manifest.json');
-    config.addPassthroughCopy('src/episodes/**/*.mp3');
+    [
+        'src/fonts',
+        'src/images',
+        'src/styles',
+        'src/scripts',
+        'src/manifest.json',
+		'src/episodes/**/*.!(md|yml)',
+	].forEach(
+		path => config.addPassthroughCopy(path)
+	);
 
     // Config
 

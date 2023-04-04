@@ -4,7 +4,7 @@
   "start_url": "/",
   "display": "browser",
   "orientation": "any",
-  "theme_color": "hotpink",
+  "theme_color": "#ff69b4",
   "background_color": "white",
   "icons": [{
     "src": "images/icons/160.png",
