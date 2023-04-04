@@ -4,7 +4,9 @@
 
 **Bruce:** Hello everybody and welcome to The F-word. The wonderful world of browsers, web standards and everything in between. I’m Bruce Lawson coming to you from Birmingham in the United Kingdom.
 
-**Vadim:** I’m Vadim coming to you from Berlin, Germany. We welcome back Mr Alex Russell, sinister mastermind from Microsoft, who regaled us recently with lots of anecdotes about clowns and cars and ditches. Alex, I think we established that a lot of the problem with Frameworks is mismatched expectations, problems, structural problems in the market rather than anybody is intrinsically evil here. But now I’d like to turn our conversation towards the intrinsically evil. I refer, of course, to the beast of Cupertino, Apple.
+**Vadim:** I’m Vadim coming to you from Berlin, Germany.
+
+**Bruce:** We welcome back Mr Alex Russell, sinister mastermind from Microsoft, who regaled us recently with lots of anecdotes about clowns and cars and ditches. Alex, I think we established that a lot of the problem with Frameworks is mismatched expectations, problems, structural problems in the market rather than anybody is intrinsically evil here. But now I’d like to turn our conversation towards the intrinsically evil. I refer, of course, to the beast of Cupertino, Apple.
 
 ### Origins or Apple browser ban
 
