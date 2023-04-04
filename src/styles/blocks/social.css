@@ -6,14 +6,26 @@
     background-color: var(--basic-light);
     line-height: 1;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 6px;
 }
 
 .social__link {
     display: inline-grid;
     grid-template-columns: min-content max-content;
-    column-gap: 8px;
+    column-gap: 2px;
     align-items: center;
     color: var(--special-blue);
+}
+
+.social__link--mastodon {
+    color: #595aff;
+}
+
+.social__link--twitter {
+    color: #1d9bf0;
 }
 
 .social__link:focus-visible {
