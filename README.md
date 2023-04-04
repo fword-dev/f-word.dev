@@ -1,5 +1,8 @@
 # The F-Word
 
+[![EditorConfig](https://github.com/fword-dev/f-word.dev/actions/workflows/editorconfig.yml/badge.svg)](https://github.com/fword-dev/f-word.dev/actions/workflows/editorconfig.yml)
+[![HTML](https://github.com/fword-dev/f-word.dev/actions/workflows/html.yml/badge.svg)](https://github.com/fword-dev/f-word.dev/actions/workflows/html.yml)
+
 Frontend podcast by Bruce Lawson and Vadim Makeev.
 
 ## Development
