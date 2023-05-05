@@ -1,10 +1,12 @@
 number: 14
 title: 'Is JavaScript a hazardous material to the user experience?'
 date: 2023-03-27
+
 hosts:
+  - Alex Russell
   - Bruce Lawson
   - Vadim Makeev
-  - Alex Russell
+
 chapters:
   - time: '00:00'
     title: 'Intro'
@@ -16,8 +18,10 @@ chapters:
     title: 'The case against React'
   - time: '36:24'
     title: 'Why companies choose React'
+
 notes: |
   ### Links
+
   - [Alex Russell on Mastodon](https://toot.cafe/@slightlyoff)
   - [Alex Russell on Twitter](https://twitter.com/slightlylate)
   - [What Does My Site Cost?](https://whatdoesmysitecost.com/)

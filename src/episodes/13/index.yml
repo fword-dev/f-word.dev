@@ -1,10 +1,12 @@
 number: 13
 title: 'Does the iOS browser ban harm or help the web?'
 date: 2021-10-07
+
 hosts:
+  - Stuart Langridge
   - Bruce Lawson
   - Vadim Makeev
-  - Stuart Langridge
+
 chapters:
   - time: '00:44'
     title: 'Browser choice on iOS'
@@ -16,8 +18,10 @@ chapters:
     title: 'Developers are disappointed'
   - time: '38:56'
     title: 'Next steps and possible future'
+
 notes: |
   ### Links
+
   - [Talking to the Competition and Markets Authority about Apple](https://www.kryogenix.org/days/2021/09/06/talking-to-the-competition-and-markets-authority-about-apple/)
   - [Browser choice on Apple’s iOS: privacy and security aspects](https://kryogenix.org/code/cma-apple/)
   - [Set Safari free!](https://brucelawson.co.uk/2021/set-safari-free/)

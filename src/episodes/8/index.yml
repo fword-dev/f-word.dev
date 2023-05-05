@@ -1,9 +1,11 @@
 number: 8
 title: 'Replacing UA strings with Client Hints as possible harm to the Web'
 date: 2021-02-01
+
 hosts:
-  - Bruce Lawson
   - James Rosewell
+  - Bruce Lawson
+
 chapters:
   - time: '00:43'
     title: 'Browser detection'
@@ -13,19 +15,24 @@ chapters:
     title: 'Possible consequences'
   - time: '21:08'
     title: 'A right to reply'
+
 notes: |
   ### Browser detection
+
   - [51Degrees](https://51degrees.com)
   - [A Browser Sniffing Warning: The Trouble With Acid3 and TinyMCE](https://dev.opera.com/articles/a-browser-sniffing-warning-the-trouble/)
 
   ### User Agent freeze
+
   - [Intent to Deprecate and Freeze: The User-Agent string](https://groups.google.com/a/chromium.org/g/blink-dev/c/-2JIRNMWJ7s/m/yHe4tQNLCgAJ)
   - [Building a privacy-first future for web advertising](https://blog.google/products/ads-commerce/2021-01-privacy-sandbox/)
   - [BBC coverage of CMA and User-Agents](https://www.bbc.co.uk/news/technology-55219750)
 
   ### Possible consequences
+
   - [Marketers for an Open Web response to the CMA’s investigation into Google’s Privacy Sandbox](https://marketersforanopenweb.com/marketers-for-an-open-web-response-to-the-cmas-investigation-into-googles-privacy-sandbox/)
   - [W3C TPAC Session on User-Agent](https://www.w3.org/2020/10/27-uach-minutes.html)
 
   ### A right to reply
+
   - [Why can’t supply chains be trusted on the web?](https://github.com/w3ctag/security-questionnaire/issues/83)
