@@ -1,0 +1,57 @@
+number: 16
+title: 'The Fugu project: priorities, Mozilla and Apple, support realms, Web vs native, and future plans'
+date: 2023-05-08
+
+hosts:
+  - Thomas Steiner
+  - Bruce Lawson
+  - Vadim Makeev
+
+chapters:
+  - time: '00:01:19'
+    title: 'Thomas and the Fugu project'
+  - time: '00:10:48'
+    title: 'Partners and priorities'
+  - time: '00:17:13'
+    title: 'Mozilla’s and Apple’s positions'
+  - time: '00:36:38'
+    title: 'Support realms'
+  - time: '00:50:59'
+    title: 'Web vs native competition'
+  - time: '01:02:46'
+    title: 'Fugu’s future plans'
+
+notes: |
+  ### Thomas and the Fugu project
+
+  - [Thomas on Mastodon](https://toot.cafe/@tomayac)
+  - [Thomas on Twitter](https://twitter.com/tomayac)
+  - [Thomas’ blog](https://blog.tomayac.com/)
+  - [Fugu landing page](https://developer.chrome.com/capabilities/)
+
+  ### Partners and priorities
+
+  - [Fugu API Showcase](https://developer.chrome.com/fugu-showcase/)
+  - [Blink Shipping Process](https://blog.chromium.org/2019/11/intent-to-explain-demystifying-blink.html)
+  - [Fugu Shipping Process](https://developer.chrome.com/blog/capabilities/#how-will-we-design-implement-these-new-capabilities)
+
+  ### Mozilla’s and Apple’s positions
+
+  - [Mozilla Standards Positions](https://mozilla.github.io/standards-positions/)
+  - [WebKit Standards Positions](https://github.com/WebKit/standards-positions)
+  - [IE legacy APIs](https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/hh772404(v=vs.85))
+
+  ### Support realms
+
+  - [Web Push for Web Apps on iOS and iPadOS](https://webkit.org/blog/13878/web-push-for-web-apps-on-ios-and-ipados/)
+  - [BopPad by Keith McMillen](https://www.keithmcmillen.com/products/boppad/)
+
+  ### Web vs native competition
+
+  - [Capacitor](https://capacitorjs.com/)
+  - [SVGcode](https://svgco.de/)
+
+  ### Fugu’s future plans
+
+  - [Fugu API Tracker](https://fugu-tracker.web.app/)
+  - [Isolated Web Apps Explainer](https://github.com/WICG/isolated-web-apps)
