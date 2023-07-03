@@ -1,0 +1,46 @@
+number: 17
+title: 'What the W3C TAG is, how standards are made, and why gray is darker than darkgray'
+date: 2023-07-04
+
+hosts:
+  - Lea Verou
+  - Bruce Lawson
+  - Vadim Makeev
+
+chapters:
+  - time: '01:44'
+    title: 'Lea’s hats in 19.3 seconds'
+  - time: '11:16'
+    title: 'What is the W3C TAG'
+  - time: '24:05'
+    title: 'CSSWG, TC39, and others'
+  - time: '33:36'
+    title: 'WHATWG, W3C, and WebDX'
+  - time: '46:19'
+    title: 'Family, SVG, and named colors'
+
+notes: |
+  ### Lea’s hats in 19.3 seconds
+
+  - [Lea on Mastodon](https://front-end.social/@leaverou)
+  - [Lea on Twitter](https://twitter.com/leaverou)
+  - [Lea’s blog](https://lea.verou.me/)
+
+  ### What is the W3C TAG
+
+  - [W3C TAG](https://w3ctag.org/)
+
+  ### CSSWG, TC39, and others
+
+  - [CSSWG](https://wiki.csswg.org/)
+  - [TC39](https://tc39.es/)
+
+  ### WHATWG, W3C, and WebDX
+
+  - [WHATWG](https://whatwg.org/)
+  - [WebDX Community Group](https://www.w3.org/community/webdx/)
+
+  ### Family, SVG, and named colors
+
+  - [Chris Lilley](https://svgees.us/)
+  - [Color.js](https://colorjs.io/)
