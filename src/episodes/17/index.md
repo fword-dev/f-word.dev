@@ -36,9 +36,9 @@
 
 **Lea:** Anyway, so I tend to wear many hats. Officially my day job is human computer interaction research and teaching at MIT. Human computer interaction is just the fancy academic word for user experience and usability just because academics like having separate words for everything. I’ve also had a very active role in developing several web standards. I’ve been active in the CSS Working Group for several, like over a decade at this point. I co-edited several CSS specifications and I’ve also been an elected TAG member. And I’ve also started several open source projects over the years. Some of them have become popular. Like, I think the most popular one is Prism, which is used for syntax highlighting all over the web. It has like almost a billion NPM downloads at this point.
 
-**Bruce:** I didn’t know that was you actually. I know you and I know that and I’d never put the two and two together.
+**Bruce:** I didn’t know that was you actually. I know you and I know that and I’d never put the two and two together, well.
 
-**Lea:** Well, I was the sole maintainer for a few years, but at this point it has a really nice team of maintainers who are all like incredibly capable people. I’ve had an advisory role in the project for like the last few years.
+**Lea:** I was the sole maintainer for a few years, but at this point it has a really nice team of maintainers who are all like incredibly capable people. I’ve had an advisory role in the project for like the last few years.
 
 **Bruce:** I like advisory roles. It’s kind of, you can get the glory and boss other people about, but don’t have to do anything else, which is good.
 
@@ -50,9 +50,11 @@
 
 And eventually like it became what I did for a living. When I was actually, when I actually started working, uh, like, you know, actually getting paid for what I do. I did start from graphic design, which was just, I guess, serendipity. Like, you know, I got interested in graphic design because of this project we had with a friend of mine, which eventually turned into a company. I was doing both the coding and the graphic design. I guess I realized I really enjoy the graphic design aspect. I started learning more about it, like being involved in graphic designer circles, practicing, eventually getting projects. And for two years or so, I was primarily a designer.
 
-I did some coding projects, but most of my clients and most of my projects at the time were either graphic design, like corporate identity, marketing materials, posters, that sort of thing, or a few small web design projects. I remember back in the beginning of the 2000s or middle of the 2000s we were all webmasters and we were doing everything for starting from design to PHP on back end. So I’ve been doing almost the same thing like working in a small studio and doing everything that’s available.
+I did some coding projects, but most of my clients and most of my projects at the time were either graphic design, like corporate identity, marketing materials, posters, that sort of thing, or a few small web design projects.
 
-**Vadim:** I think I met you back in Oslo back in 2009 or something like that and I saw you some of your talks later like on CSS and SVG and you became known, widely known as a CSS magician, one of the first, one of the few first people who would unveil some secret parts of CSS. We can jump to this part. How did you become publicly known with your skills and your front end?
+**Vadim:** I remember back in the beginning of the 2000s or middle of the 2000s we were all webmasters and we were doing everything for starting from design to PHP on back end. So I’ve been doing almost the same thing like working in a small studio and doing everything that’s available.
+
+I think I met you back in Oslo back in 2009 or something like that and I saw you some of your talks later like on CSS and SVG and you became known, widely known as a CSS magician, one of the first, one of the few first people who would unveil some secret parts of CSS. We can jump to this part. How did you become publicly known with your skills and your front end?
 
 **Lea:** So part of it is that I have this bad habit that every time I use something, anything, a product, the technology, whatever, if I stay with it long enough, I come up with ways to improve it. And of course that extends to CSS as well. So as I was using CSS as a developer in my startup at the time, back in Greece, I started coming up with tips and tricks that I could use that I haven’t seen published anywhere. I started making tools primarily for myself, but that I thought might be useful for other people. I started coming up with ways to improve the syntax of CSS altogether and publishing them, posting them in the mailing list. Back then the CSS Working Group was using a mailing list. And I guess they liked my suggestions because at some point they invited me over as an invited expert.
 
