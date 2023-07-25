@@ -3,7 +3,7 @@
 [![EditorConfig](https://github.com/fword-dev/f-word.dev/actions/workflows/editorconfig.yml/badge.svg)](https://github.com/fword-dev/f-word.dev/actions/workflows/editorconfig.yml)
 [![HTML](https://github.com/fword-dev/f-word.dev/actions/workflows/html.yml/badge.svg)](https://github.com/fword-dev/f-word.dev/actions/workflows/html.yml)
 
-Frontend podcast by Bruce Lawson and Vadim Makeev.
+Frontend podcast by Bruce Lawson and Vadim Makeev about the magical and glamorous world of web standards, browsers and everything in between.
 
 ## Development
 
