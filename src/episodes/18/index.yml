@@ -1,0 +1,50 @@
+number: 18
+title: 'View Transitions API, snarling cats, a new era at Shopify, and cake jokes'
+date: 2023-08-07
+
+hosts:
+  - Jake Archibald
+  - Bruce Lawson
+  - Vadim Makeev
+
+chapters:
+  - time: '01:32'
+    title: 'Cats and View Transitions'
+  - time: '10:28'
+    title: 'Design and inspiration'
+  - time: '21:43'
+    title: 'Browser support'
+  - time: '32:27'
+    title: 'Use cases and future proofing'
+  - time: '41:22'
+    title: 'Shopify and cake jokes'
+
+notes: |
+  ### Jake on socials
+
+  - [Jake on Mastodon](https://mastodon.social/@jaffathecake)
+  - [Jake on Twitter](https://twitter.com/jaffathecake)
+  - [Jake’s blog](https://jakearchibald.com/)
+
+  ### Cats and View Transitions
+
+  - [Missing cat thread on Twitter](https://twitter.com/jaffathecake/status/1251389683239616512)
+  - [Smooth and simple transitions with the View Transitions API](https://developer.chrome.com/docs/web-platform/view-transitions/)
+
+  ### Design and inspiration
+
+  - [Google I/O: Bringing page transitions to the web](https://youtu.be/JCJUPJ_zDQ4)
+  - [View Transitions API at WICG](https://github.com/WICG/view-transitions)
+
+  ### Browser support
+
+  - [Can I use: View Transitions API](https://caniuse.com/view-transitions)
+  - [Delightful UI Animations With Shared Element Transitions API](https://www.smashingmagazine.com/2022/10/ui-animations-shared-element-transitions-api-part1/)
+
+  ### Use cases and future proofing
+
+  - [Adding a simple View Transition to an MPA](https://github.com/pepelsbey/pepelsbey.dev/commit/4b7aa317c14e3ca8f86c99360b315c25e8ceb252)
+
+  ### Shopify and cake jokes
+
+  - [Madeira cake recipe](https://www.bbc.co.uk/food/recipes/madeiracake_73878)
