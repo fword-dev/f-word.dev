@@ -1,0 +1,58 @@
+number: 19
+title: 'State of Web accessibility, ARIA in HTML, and missing UI patterns'
+date: 2023-09-08
+
+hosts:
+  - Léonie Watson
+  - Bruce Lawson
+  - Vadim Makeev
+
+chapters:
+  - time: '01:21'
+    title: 'Leonie and TetraLogical'
+  - time: '06:28'
+    title: 'State of accessibility'
+  - time: '13:34'
+    title: 'Screen readers'
+  - time: '19:38'
+    title: 'AI-generated alts'
+  - time: '27:33'
+    title: 'Specs interoperability'
+  - time: '38:22'
+    title: 'Missing UI patterns'
+  - time: '49:21'
+    title: 'State of ARIA specs'
+
+notes: |
+  ### Leonie and TetraLogical
+
+  - [Léonie’s blog](https://tink.uk/)
+  - [Léonie on Mastodon](https://frontend.social/@tink)
+  - [Léonie on LinkedIn](https://www.linkedin.com/in/lwatson)
+  - [TetraLogical](https://tetralogical.com/)
+
+  ### State of accessibility
+
+  - [ARIA Authoring Practices Guide](https://www.w3.org/WAI/ARIA/apg/)
+
+  ### Screen readers
+
+  - [JAWS](https://www.freedomscientific.com/products/software/jaws/)
+  - [NVDA](https://www.nvaccess.org/)
+  - [VoiceOver](https://support.apple.com/guide/voiceover/welcome/mac)
+
+  ### AI-generated alts
+
+  - [Thoughts on screen readers and image recognition](https://tink.uk/thoughts-on-screen-readers-and-image-recognition/)
+
+  ### Specs interoperability
+
+  - [HTML: The search element](https://html.spec.whatwg.org/multipage/grouping-content.html#the-search-element)
+
+  ### Missing UI patterns
+
+  - [Open UI](https://open-ui.org/)
+
+  ### State of ARIA specs
+
+  - [ARIA in HTML](https://www.w3.org/TR/html-aria/)
