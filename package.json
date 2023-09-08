@@ -5,7 +5,7 @@
     "build": "rm -rf dist && eleventy",
     "test": "npm run editorconfig",
     "editorconfig": "editorconfig-checker",
-    "html": "java -jar node_modules/vnu-jar/build/dist/vnu.jar --filterfile .vnurc dist/**/*.html",
+    "html": "java -jar node_modules/vnu-jar/build/dist/vnu.jar --filterfile .vnurc --skip-non-html dist",
     "deploy": "cd dist && rsync --progress --archive --compress --delete --exclude=.DS_Store . f-word.dev:/var/www/f-word.dev/html/"
   },
   "engines": {
@@ -17,17 +17,13 @@
   ],
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "autoprefixer": "^10.4.14",
     "editorconfig-checker": "^5.0.1",
-    "esbuild": "^0.18.11",
+    "esbuild": "^0.19.2",
     "html-minifier": "^4.0.0",
     "js-yaml": "^4.1.0",
+    "lightningcss": "^1.21.7",
     "markdown-it-named-headings": "^1.1.0",
     "music-metadata": "7.13.4",
-    "postcss": "^8.4.21",
-    "postcss-csso": "^6.0.1",
-    "postcss-import": "^15.1.0",
-    "postcss-media-minmax": "^5.0.0",
     "pretty-data": "^0.40.0",
     "vnu-jar": "^23.4.11"
   }

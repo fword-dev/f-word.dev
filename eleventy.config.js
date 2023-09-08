@@ -3,14 +3,11 @@ const esbuild = require('esbuild');
 const htmlmin = require('html-minifier');
 const markdown = require('markdown-it')({ html: true });
 const markdownItNamedHeadings = require('markdown-it-named-headings');
-const postcss = require('postcss');
-const postcssImport = require('postcss-import');
-const postcssMediaMinmax = require('postcss-media-minmax');
-const autoprefixer = require('autoprefixer');
-const postcssCsso = require('postcss-csso');
+const lightningcss = require('lightningcss');
 const music = require('music-metadata');
 const prettydata = require('pretty-data');
 const yaml = require('js-yaml');
+const packageJson = require('./package.json');
 
 module.exports = (config) => {
     // Audio Data Filters
@@ -69,43 +66,39 @@ module.exports = (config) => {
 
     // CSS
 
+    const styles = [
+        './src/styles/index.css',
+    ];
+
+    const processStyles = async (path) => {
+        return await lightningcss.bundle({
+            filename: path,
+            minify: true,
+            sourceMap: false,
+            targets: lightningcss.browserslistToTargets(
+                packageJson.browserslist,
+            ),
+            drafts: {
+                nesting: true,
+            },
+        });
+    };
+
     config.addTemplateFormats('css');
 
     config.addExtension('css', {
         outputFileExtension: 'css',
         compile: async (content, path) => {
-            if (path !== './src/styles/index.css') {
+            if (!styles.includes(path)) {
                 return;
             }
 
             return async () => {
-                let output = await postcss([
-                    postcssImport,
-                    postcssMediaMinmax,
-                    autoprefixer,
-                    postcssCsso,
-                ]).process(content, {
-                    from: path,
-                });
+                let { code } = await processStyles(path);
 
-                return output.css;
-            }
-        }
-    });
-
-    config.addNunjucksAsyncFilter('css', (path, callback) => {
-        fs.readFile(path, 'utf8', (error, content) => {
-            postcss([
-                postcssImport,
-                postcssMediaMinmax,
-                autoprefixer,
-                postcssCsso,
-            ]).process(content, {
-                from: path,
-            }).then((output) => {
-                callback(null, output.css)
-            });
-        });
+                return code;
+            };
+        },
     });
 
     // JavaScript
