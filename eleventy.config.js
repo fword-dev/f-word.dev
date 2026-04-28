@@ -3,6 +3,7 @@ const esbuild = require('esbuild');
 const htmlmin = require('html-minifier');
 const markdown = require('markdown-it')({ html: true });
 const markdownItNamedHeadings = require('markdown-it-named-headings');
+const browserslistToEsbuild = require('browserslist-to-esbuild').default;
 const lightningcss = require('lightningcss');
 const music = require('music-metadata');
 const prettydata = require('pretty-data');
@@ -114,7 +115,7 @@ module.exports = (config) => {
 
             return async () => {
                 let output = await esbuild.build({
-                    target: 'es2020',
+                    target: browserslistToEsbuild(),
                     entryPoints: [path],
                     minify: true,
                     bundle: true,

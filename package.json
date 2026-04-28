@@ -9,22 +9,22 @@
     "deploy": "cd dist && rsync --progress --archive --compress --delete --exclude=.DS_Store . f-word.dev:/var/www/f-word.dev/html/"
   },
   "engines": {
-    "node": "16"
+    "node": ">=24"
   },
   "browserslist": [
-    "last 2 version",
-    "not dead"
+    "baseline widely available, safari 15"
   ],
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
-    "editorconfig-checker": "^5.0.1",
-    "esbuild": "^0.19.2",
+    "@11ty/eleventy": "^3.1.5",
+    "browserslist-to-esbuild": "^2.1.1",
+    "editorconfig-checker": "^6.1.1",
+    "esbuild": "^0.28.0",
     "html-minifier": "^4.0.0",
-    "js-yaml": "^4.1.0",
-    "lightningcss": "^1.21.7",
+    "js-yaml": "^4.1.1",
+    "lightningcss": "^1.32.0",
     "markdown-it-named-headings": "^1.1.0",
-    "music-metadata": "7.13.4",
+    "music-metadata": "11.12.3",
     "pretty-data": "^0.40.0",
-    "vnu-jar": "^23.4.11"
+    "vnu-jar": "^26.4.16"
   }
 }
