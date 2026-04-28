@@ -1,5 +1,6 @@
 {
   "private": true,
+  "type": "module",
   "scripts": {
     "start": "eleventy --serve --quiet",
     "build": "rm -rf dist && eleventy",
