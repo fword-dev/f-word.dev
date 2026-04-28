@@ -6,8 +6,7 @@
     "build": "rm -rf dist && eleventy",
     "test": "npm run editorconfig",
     "editorconfig": "editorconfig-checker",
-    "html": "java -jar node_modules/vnu-jar/build/dist/vnu.jar --filterfile .vnurc --skip-non-html dist",
-    "deploy": "cd dist && rsync --progress --archive --compress --delete --exclude=.DS_Store . f-word.dev:/var/www/f-word.dev/html/"
+    "deploy": "rsync --archive --verbose --compress --delete --delete-excluded --exclude '.DS_Store' --copy-links ./dist/ deploy@f-word.dev:/opt/sites/f-word.dev/public/"
   },
   "engines": {
     "node": ">=24"
