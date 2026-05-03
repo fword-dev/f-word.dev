@@ -1,7 +1,7 @@
 /* Episode */
 
 .episode {
-    padding: 32px 20px 36px;
+    padding: 32px 20px;
     background-color: var(--basic-black);
     color: var(--basic-white);
 }
@@ -27,7 +27,7 @@
 .episode__audio {
     display: block;
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     border-radius: 100px;
 }
 
@@ -40,8 +40,7 @@
 
 .episode__chapters {
     display: grid;
-    row-gap: 8px;
-    margin: 0;
+    margin: 0 -4px;
     padding: 0;
     list-style: none;
 }
@@ -50,6 +49,20 @@
     display: grid;
     grid-template-columns: min-content 1fr;
     column-gap: 8px;
+    padding: 4px;
+}
+
+.episode__chapter--has-button {
+    cursor: default;
+}
+
+.episode__chapter--has-button:hover {
+    background-color: var(--basic-extra-dark)
+}
+
+.episode__chapter--has-button:focus-within {
+    outline: 3px solid var(--special-blue);
+    outline-offset: -3px;
 }
 
 /* Time */
@@ -57,4 +70,19 @@
 .episode__time {
     font-weight: bold;
     font-variant: tabular-nums;
+}
+
+.episode__time--button {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+    padding: 0px;
+    border: 0px;
+}
+
+.episode__time--button:focus,
+.episode__time--button::-moz-focus-inner {
+    outline: none;
+    border: 0;
 }
